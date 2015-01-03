@@ -107,7 +107,7 @@ public class ComputeTaxWithSelectionStatement    {
 		 }            
 	    else    {
 	        //System.out.println("Invalid input");
-		JOptionPane.showMessageDialog(null, "Invalid status input FUCKHEAD!!!",
+		JOptionPane.showMessageDialog(null, "Invalid status input Progam terminated!!!",
 		"Invalid input", JOptionPane.INFORMATION_MESSAGE); 
 		}
 		

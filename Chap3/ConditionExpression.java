@@ -1,7 +1,7 @@
 public class ConditionExpression    {
     public static void main(String args[])	{
     
-    int a = 7;
+    int a = 9;
     
     if (a < 4)
 	System.out.println("Less the 4");

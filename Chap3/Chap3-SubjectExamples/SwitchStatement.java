@@ -17,7 +17,7 @@ public class SwitchStatement    {
 				break;
         case 2: System.out.println (monthString = "February");
 				break;
-	case 3: System.out.println (monthString = "March");
+        case 3: System.out.println (monthString = "March");
 				break;
         case 4: System.out.println (monthString = "April");
 				break;

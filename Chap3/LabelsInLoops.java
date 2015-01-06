@@ -4,7 +4,7 @@ public class LabelsInLoops	{
     int i, j;
 
     outer:
-	    for (i = 1; i < 10; i++)    {
+	for (i = 1; i < 10; i++)    {
 	    inner:
 		for (j = 1; j < 10; j++)	{
 		    if (i * j > 50)

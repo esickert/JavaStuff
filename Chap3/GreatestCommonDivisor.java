@@ -14,8 +14,16 @@ public class GreatestCommonDivisor	{
     int n2 = Integer.parseInt(s2);
     System.out.println(n2);
 
-    int gcd = 1;
-    int a =1;
+    double d = 5.0;
+    double z = 1.5 ;
+    d = d + 3.9;
+    d = d + 2.0;
+    d += z;
+    d--;
+    System.out.println(d);
+
+    float gcd = 1;
+    int a = 1;
     while (a <= n1 && a <= n2)	{
 	if (n1 % a == 0 && n2 % a == 0)	{
 	    gcd = a;
@@ -24,9 +32,8 @@ public class GreatestCommonDivisor	{
 	a++;
     }
 
-    String output = "The greatest common divisor of " + n1 + " 
-and " + n2
-	+ " is " + gcd;
+    String output = "The greatest common divisor of " + n1
+    + "and " + n2  +  " is " + gcd;
     JOptionPane.showMessageDialog(null, output,
 	"The last BOX", JOptionPane.INFORMATION_MESSAGE);
     }

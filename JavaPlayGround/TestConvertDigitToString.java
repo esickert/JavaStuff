@@ -7,9 +7,11 @@ public class TestConvertDigitToString	{
 
     //This is weird as Java converts the 2 to a string!! It works.
     a = "43210 " + (2.0 + 5.05);
-    System.out.println(a);
+    System.out.print(a);
+    System.out.print(a);
+    System.out.print(a);
     
-    JOptionPane.showMessageDialog(null, a,
-        " Strings and digits", JOptionPane.INFORMATION_MESSAGE);
+//    JOptionPane.showMessageDialog(null, a,
+ //       " Strings and digits", JOptionPane.INFORMATION_MESSAGE);
     }
 }    

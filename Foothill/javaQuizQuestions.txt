@@ -15,6 +15,7 @@
 	D. 	
 		double a = 7.6;
 		a = 54.9;
+Answer: C because b was declared earlier.
 
 5.What is main()?
 	Answer: main() is a method, which is a collection of statements. It marks the place in the

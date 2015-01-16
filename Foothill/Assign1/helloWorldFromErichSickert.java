@@ -1,5 +1,5 @@
 public class helloWorldFromErichSickert	{
-    public static void mai(String[] args)	{
+    public static void main(String[] args)	{
     
     String erich = "Hello World";
     String sickert = " from Erich Sickert";

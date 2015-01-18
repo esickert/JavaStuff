@@ -35,3 +35,104 @@ DEF: Library- a library is a collection of class and method definitions
 ­7.	int a = 10;
 	int b = 6;
 	What is the value of a/b?
+
+8.   Show that the expression (!(a && b) && (a || b)) || ((a && b) || !(a || b)) is equivalent to true.
+
+9.  Write a static method odd() that takes three boolean inputs and returns true if an odd number of inputs are true, and false otherwise.
+
+10.  Write a code fragment that prints true if the double variables x and y are both strictly between 0 and 1 and false otherwise.
+
+
+11.  What is wrong with the following code fragment?  
+
+double x = -32.2;
+boolean isPositive = (x > 0);
+if (isPositive = true) 
+     System.out.println(x + " is positive");
+else                   
+     System.out.println(x + " is not positive");
+
+Nothing It compiles and runs. The result as written is "-32.2 is positive"
+
+12.  
+At a certain school, students receive letter grades based on the following scale.
+
+Numeric Score  	Letter Grade
+93 or above			 	A
+From 84 to 92 inclusive 	B
+From 75 to 83 inclusive 	C
+Below 75				 	F
+
+Which of the following code segments will assign the correct string to grade for a given integer score?
+
+Option A.
+if (score >= 93)
+        grade = "A";
+if (score >= 84 && score <= 92)
+        grade = "B";
+if (score >= 75 && score <= 83)
+        grade = "C";
+if (score < 75)
+        grade = "F";
+ 
+Option B:
+if (score >= 93)
+        grade = "A";
+if (84 <=  score <= 92)
+        grade = "B";
+if (75 <= score <= 83)
+        grade = "C";
+if (score < 75)
+        grade = "F";
+ 
+Option C:
+if (score >= 93)
+        grade = "A";
+else if (score >= 84)
+        grade = "B";
+else if (score >= 75)
+        grade = "C";
+else
+        grade = "F";
+
+13.   What does the following code fragment do for the different values of x (negative, 0, positive)?
+
+    if (x > 0);
+        System.out.println("positive");
+
+14.What is the value of a after the following code fragment is executed?
+
+    //*/
+    a = 17;
+    /*/
+    a = -17;
+    //*/
+
+15.  What does the following print?
+
+    public static void main(String[] args) { 
+       boolean nesting = true;
+       /* /* */ nesting = false; // */ 
+       System.out.println(nesting);
+    } 
+ 
+16.  
+
+Assume the variable declarations below for this problem:
+ 
+int x = 3, y = 2, z = x + y;
+
+
+Which of the following output statements correctly displays the sentence below?
+
+3 + 2 = 5
+ 
+	A. 	System.out.print(x + “+” + y + “=” + z);
+
+ 	B. 	System.out.print(x + “ + ” + y + “ = ” + z);       CORRECT
+ 
+	C. 	System.out.print(x + y + “ = ” + z);
+ 
+	D. 	System.out.print(x + y = z);
+
+17.

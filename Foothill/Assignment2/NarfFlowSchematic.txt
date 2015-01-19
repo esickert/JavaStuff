@@ -1,0 +1,34 @@
+Below is a schematic of how I arrived at the answer:                                                                                      OutPut:
+
+main                                                                                  
+  bizz [5]
+  buzz [2]	
+  zoop("just for", 5_)---------------   zoop ("just for", 5)                                                           					 just for\n
+  clink(2*2)						      fred ["just for"]
+     |								      bob [5]
+     |								      ping("not ")
+     |									|
+     |									|
+     |									|________________ping("not ")
+     |														   strangeStrung ["not "]	    				 just for\n	
+     |																					    				 any not more\n 
+     |
+     |
+     |------------------------------------------ clink(4)												   				 just for\n
+								   fork [4]											    				any not more\n
+								   zoop("breakfast", 4)							    				It*s 
+									|	
+									|
+									|________________zoop("breakfast",4)		    				just for
+														   fred ["breakfast "]		   				any not more	
+														   bob [4]					    				It*s breakfast \n 
+																					    				!
+
+NOTE:   \n means newline from System.out.println in contrast to 
+		System.out.print in method clink above.
+
+ANSWER:
+just for
+any not more
+It*s breakfast
+!

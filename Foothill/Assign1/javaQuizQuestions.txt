@@ -1,0 +1,36 @@
+1. Write a statement (ie line of Java code) which declares a double precision floating point variable and assign it the initial value of 13.8.
+
+2. List at least three primitive data types used in Java.
+
+3. What is the difference between a floating point numbers and integers?
+
+4 Which one of the following code segments will cause an error?
+	A. 	
+		int x;
+		x = 7;
+	B. 	double y = 42.8;
+	C. 	
+		int b;
+		int b = 5;
+	D. 	
+		double a = 7.6;
+		a = 54.9;
+
+5.What is main()?
+	Answer: main() is a method, which is a collection of statements. It marks the place in the
+			  program where execution begins. When the program runs it starts at the first
+			  statement in main and ends when it finishes the last statement.
+
+DEF: Library- a library is a collection of class and method definitions 
+
+6. What is the value of x after the following code executes?
+	double x = 5.0;
+	double z = 1.5;
+	x = x ­ 3.9;
+	z = x + 2.0;
+	x += z;
+	x--;
+­
+­7.	int a = 10;
+	int b = 6;
+	What is the value of a/b?

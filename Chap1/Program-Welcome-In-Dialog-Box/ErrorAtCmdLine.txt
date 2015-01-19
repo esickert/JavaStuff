@@ -1,6 +1,15 @@
+<<<<<<< HEAD
 C:\Sickert Stuff\The Java Text Book\Chapter 1\Program-Welcome-In-Dialog-Box>javac WelcomeInBox.java
 
 C:\Sickert Stuff\The Java Text Book\Chapter 1\Program-Welcome-In-Dialog-Box>java WelcomeInBox.java
 Error: Could not find or load main class WelcomeInBox.java
 
 The main class name is WelcomeInBox, not WelcomeInBox.java
+=======
+C:\Sickert Stuff\The Java Text Book\Chapter 1\Program-Welcome-In-Dialog-Box>javac WelcomeInBox.java
+
+C:\Sickert Stuff\The Java Text Book\Chapter 1\Program-Welcome-In-Dialog-Box>java WelcomeInBox.java
+Error: Could not find or load main class WelcomeInBox.java
+
+The main class name is WelcomeInBox, not WelcomeInBox.java
+>>>>>>> 38db5ad5e848c973b20fe5f6c9d5c74851fd07f9

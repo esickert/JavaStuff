@@ -1,0 +1,85 @@
+Answers:
+1.
+ public class Buzz {
+          public static void main(String[] args) {
+                    zippo("rattle", 13);
+          }          
+ 
+          public static void baffle(String blimp) {
+                    System.out.println(blimp);
+                    zippo("ping", -5);
+          }
+ 
+          public static void zippo(String quince, int flag) {
+    [1]             if (flag < 0) {
+                              System.out.println(quince + " zoop");
+                    } else {
+                              System.out.println("ik");
+                              baffle(quince);
+                              System.out.println("boo-wa-ha-ha");
+                    }
+          }
+}
+
+2.
+ public class Buzz {
+          public static void main(String[] args) {
+                    zippo("rattle", 13);
+          }          
+ 
+          public static void baffle(String blimp) {
+    [3]         System.out.println(blimp);
+                    zippo("ping", -5);
+          }
+ 
+          public static void zippo(String quince, int flag) {
+    [1] [4]      if (flag < 0) {
+    [5]                      System.out.println(quince + " zoop");
+                    } else {
+    [2]                    System.out.println("ik");
+                              baffle(quince);
+    [6]                    System.out.println("boo-wa-ha-ha");
+                    }
+          }
+}
+
+3. 
+rattle
+
+4.
+ik
+rattle
+ping zoop
+boo-wa-ha-ha
+
+How I got these answers...
+
+main()
+zippo("rattle", 13)
+           |
+	   |
+	   |
+    zippo(string quince, int flag)          //NOTE this zippo is called from main()
+    quince["rattle"]
+    flag[13]
+    (if) else
+        println ("ik")																		"ik"
+	baffle(quince) ----------------------------->baffle(string blimp)
+        println("boo-wa-ha-ha")			blimp["rattle"]
+			|							println("rattle")								"rattle"
+			|							zippo("ping",-5)         //NOTE: this zippo is being called from baffle, we haven't 
+			|									|			   //			finished the first zippo yet (main()).    This call of
+			|									|			  //			baffle is finished though
+			|									|			  			
+			|									|
+			|									|
+			|									v
+			|								zippo(string quince, int flag)
+			|								quince["ping"]
+			|								flag[-5]
+			|								if (else)  		// -5 is less than 0 so...
+			|								    print (quince + "zoop")					"ping zoop"
+			|												//we end this call of zippo, but we are still in the first
+			|												// call of zippo from main() so...
+			|																								
+	 		|------------------------------------------------------------------------------------------------------------>	"boo-wa-ha-ha"

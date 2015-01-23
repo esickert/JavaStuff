@@ -36,11 +36,11 @@ DEF: Library- a library is a collection of class and method definitions
 	int b = 6;
 	What is the value of a/b?
 
-8.   Show that the expression (!(a && b) && (a || b)) || ((a && b) || !(a || b)) is equivalent to true.
+8.   Show that the expression (!(a && b) && (a || b)) || ((a && b) || !(a || b)) is equivalent to true.     
 
-9.  Write a static method odd() that takes three boolean inputs and returns true if an odd number of inputs are true, and false otherwise.
+9.  ****** Write a static method odd() that takes three boolean inputs and returns true if an odd number of inputs are true, and false otherwise. ********WORK ON!!!!  
 
-10.  Write a code fragment that prints true if the double variables x and y are both strictly between 0 and 1 and false otherwise.
+10.  Write a code fragment that prints true if the double variables x and y are both strictly between 0 and 1 and false otherwise.   CHECK!!!!!!!!!!!!!!!!!!!!!!! SEE DoubleNums.java
 
 
 11.  What is wrong with the following code fragment?  
@@ -52,7 +52,7 @@ if (isPositive = true)
 else                   
      System.out.println(x + " is not positive");
 
-Nothing It compiles and runs. The result as written is "-32.2 is positive"
+Nothing It compiles and runs. The result as written is "-32.2 is positive" tHE ASSIGMENT OPERATOR IN THIS CASE RESULTS WITH TRUE AS A BOOLEAN
 
 12.  
 At a certain school, students receive letter grades based on the following scale.
@@ -78,9 +78,9 @@ if (score < 75)
 Option B:
 if (score >= 93)
         grade = "A";
-if (84 <=  score <= 92)
+if (84 <=  score <= 92)   ***   these expressions are illegal in java
         grade = "B";
-if (75 <= score <= 83)
+if (75 <= score <= 83)   ***  TestOdd.java:24: error: bad operand types for binary operator '<='
         grade = "C";
 if (score < 75)
         grade = "F";
@@ -94,6 +94,8 @@ else if (score >= 75)
         grade = "C";
 else
         grade = "F";
+
+A and C only !!!!!!!!!!!!!!!!!!!!!!!
 
 13.   What does the following code fragment do for the different values of x (negative, 0, positive)?
 

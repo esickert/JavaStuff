@@ -5,7 +5,7 @@
  
           public static void baffle(String blimp) {
              /*3*/  System.out.println(blimp);
-                    zippo("ping", -5);
+                    zippo("ping", 5);
           }
  
           public static void zippo(String quince, int flag) {

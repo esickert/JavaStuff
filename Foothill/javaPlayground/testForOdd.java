@@ -1,4 +1,4 @@
-public class test	{
+public class testForOdd	{
 	public static void main(String[] args)	{
 		boolean dog = true;
 		boolean cat = false;

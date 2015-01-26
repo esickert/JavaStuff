@@ -38,7 +38,7 @@ public class PerfectNumber	{
             System.out.println(number + " is also a purrrrfect number!!! Yeah this is purrrfect");
         else    
             System.out.println(number + " is NOT a purrfect number!!!!!");
-    } //end of perfectNum
+    } //end of method perfectNum
 
     public static void nextPerfectNumber(int number)  {
        // int number = 7;
@@ -58,6 +58,6 @@ public class PerfectNumber	{
             else    
                 number++;
         } //  end of while loop
-    }  //end of nextPerfectNumber  
+    }  //end of method nextPerfectNumber  
           
 }  //end of class PerfectNumber

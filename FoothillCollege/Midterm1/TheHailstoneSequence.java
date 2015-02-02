@@ -1,19 +1,32 @@
 import java.util.*;
 
+/***********************************************************************/
+/* Midterm take home assignment                          Erich Sickert */
+/*                                                                     */
+/* "Write a program that reads in a number from the user and then      */
+/* displays the Hailstone sequence for that number."                   */
+/*                                                                     */
+/* This program prompts the user for a positive number. If the user    */
+/* in puts 1, 0, or a negative number the program will terminate       */
+/* with a message "Invalid input!". I started to write the program to  */
+/* prompt again but that was not asked for in the directions.          */
+/***********************************************************************/
+
 public class TheHailstoneSequence	{
+      /** Main method  */
     public static void main(String[] args)	{
     
         Scanner userInput = new Scanner(System.in);
         System.out.print("Please enter a positve number: ");
         int inputNumber = userInput.nextInt();
         
-        collatzConjecture(inputNumber);
+        collatzConjecture(inputNumber);  
 
     } //end of main
 
     public static void collatzConjecture(int number)  {
         int count = 0;
-        if (number <= 1)        
+        if (number <= 0)        
             System.out.println("Invalid input!");
         else    {
             while (number != 1)    {   

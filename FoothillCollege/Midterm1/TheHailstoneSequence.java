@@ -1,15 +1,14 @@
 import java.util.*;
 
 /***********************************************************************/
-/* Midterm take home assignment                          Erich Sickert */
-/*                                                                     */
-/* "Write a program that reads in a number from the user and then      */
-/* displays the Hailstone sequence for that number."                   */
-/*                                                                     */
-/* This program prompts the user for a positive number. If the user    */
-/* in puts 1, 0, or a negative number the program will terminate       */
-/* with a message "Invalid input!". I started to write the program to  */
-/* prompt again but that was not asked for in the directions.          */
+// Midterm take home program                              Erich Sickert 
+//                                                                     
+// "Write a program that reads in a number from the user and then      
+// displays the Hailstone sequence for that number."                   
+//                                                                     
+// This program prompts the user for a positive number. If the user   
+// inputs 0, or a negative number the program will terminate      
+// with a message "Invalid input!".         
 /***********************************************************************/
 
 public class TheHailstoneSequence	{
@@ -26,8 +25,8 @@ public class TheHailstoneSequence	{
 
     public static void collatzConjecture(int number)  {
         int count = 0;
-        if (number <= 0)        
-            System.out.println("Invalid input!");
+        if (number <= 0)                          // this if statement checks
+            System.out.println("Invalid input!"); // user input for appropriate values
         else    {
             while (number != 1)    {   
                 if (number % 2 == 0)   {

@@ -12,16 +12,19 @@ public class ReverseNum	{
     Scanner userInput = new Scanner(System.in);
     n = userInput.nextInt();
     int number = n;
+    int count = 1;
 
     while (n != 0)  {
         reverse = reverse * 10;
+        System.out.println("In pass " + count + " reverse is " + reverse);
         reverse = reverse + n % 10;
+        System.out.println("reverse is then " + reverse);
         n = n / 10;
+        System.out.println("In pass " + count + ",n is " + n);
+        count++;
        // break;
     } // end of while loop
 
-    System.out.println("The result of 237 / 10 is " + (237 / 10));
-    System.out.println("The result of 237 % 10 is " + (237 % 10));
     System.out.println("The reverse of " + number + " is " + reverse);
 
     } //end of main

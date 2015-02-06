@@ -1,0 +1,87 @@
+//make the method
+public static void raiseToPower(double base, int exp) {
+    //make a loop because it's the same action several times
+    
+    for(int i=0; i<numberOfTimesIWantToDoAnAction; i++) {
+    //in the loop we want to find the answer of raising to the power
+        //raising to the power means to multiply the base by itself the exponent number of timesOY
+        base*base;    
+    }
+        
+    //to print out the final result after multiplying
+    System.out.println("The answer is :"+answer);
+}
+
+*************************************************************************************************
+
+//make the method
+public static void raiseToPower(double base, int exp) {
+    //make a loop because it's the same action several times
+    
+    for(int i=0; i<numberOfTimesIWantToDoAnAction; i++) {
+    //in the loop we want to find the answer of raising to the power
+        //raising to the power means to multiply the base by itself the exponent number of timesOY
+        base*base;    
+    }
+        
+    //to print out the final result after multiplying
+    System.out.println("The answer is :"+answer);
+}
+*************************************************************************************************
+
+I//make the method
+public static void raiseToPower(double base, int exponent) {    
+//make a loop because it's the same action several times
+    double answer = base;
+    boolean isNegative = false;
+//    exponent = Math.abs(exponent);
+    if(exponent<0) {
+        isNegative = true;
+        exponent = exponent*-1;
+     }
+    
+    for(int i=0; i<exponent; i++) {
+    //in the loop we want to find the answer of raising to the power
+        //raising to the power means to multiply the base by itself the exponent number of timesOYe
+        //base*base;
+        answer = answer*base;    
+    }
+        
+    //to print out the final result after multiplying
+    if(isNegative) {
+        answer = 1.0/answer;
+        System.out.println("The answer is :"+answer);
+     }
+     else
+        System.out.println("The answer is :"+answer);
+    
+}
+*********************************************************************************************
+
+I//make the method
+public static void raiseToPower(double base, int exponent) {    
+//make a loop because it's the same action several times
+    double answer = base;
+    boolean isNegative = false;
+//    exponent = Math.abs(exponent);
+    if(exponent<0) {
+        isNegative = true;
+        exponent = exponent*-1;
+     }
+    
+    for(int i=0; i<exponent; i++) {
+    //in the loop we want to find the answer of raising to the power
+        //raising to the power means to multiply the base by itself the exponent number of timesOYe
+        //base*base;
+        answer = answer*base;    
+    }
+        
+    //to print out the final result after multiplying
+    if(isNegative) {
+        answer = 1.0/answer;
+        System.out.println("The answer is :"+answer);
+     }
+     else
+        System.out.println("The answer is :"+answer);
+    
+}

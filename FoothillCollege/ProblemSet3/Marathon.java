@@ -33,6 +33,6 @@ public class Marathon	{
 	int z = bestRunningTime(y);
 	System.out.println("Inside secondBestTime method, array index " + z);
 	return (z);
-    } //end of secondBestTime
+    } //end of method secondBestTime
 
 } //end of class Marathon

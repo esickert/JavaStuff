@@ -1,5 +1,5 @@
 /***********************************************************************/
-// Problem Set 3                                          Erich Sickert
+/** Problem Set 3                                          Erich Sickert
 //
 // Write a method that takes as input an array of integers and returns the
 // index corresponding to the lowest one. Run this method on the array of
@@ -15,56 +15,62 @@ public class Marathon	{
     public static void main(String[] args)	{
 
 	String[] names = {"Elena", "Thomas", "Hamilton", "Suzie", "Phil", "Matt", "Alex",
-			"Emma", "John", "James", "Jane", "Emily", "Daniel", "Neda",
-			"Aaron", "Kate"};
+			"Emma", "John", "James", "Jane", "Emily", "Daniel",
+			"Neda", "Aaron", "Kate"};
 
-	int[] times = {341, 273, 278, 329, 445, 403, 388, 275, 243, 334, 412, 393, 299,
-		      343, 317, 265};
+	int[] times = {341, 473, 278, 329, 445, 403, 388, 275, 243, 334,
+		       412, 393, 299, 343, 317, 265};
 
-	System.out.println("Name:\t Time:");              // tabs used to format output
-	System.out.println("***************");
-	for (int i = 0; i < names.length; i++) {          
-	    System.out.println(names[i] + ":\t " + times[i]);
+	System.out.println("Name:\t\tTime:"); // tabs and newlines used to format output
+	System.out.println("******************");
+	for (int i = 0; i < names.length; i++) { 
+	    System.out.println(names[i] + ":\t\t" + times[i]);
         } // end of for loop
 
-	int bestTimeIndex = bestRunningTime(times);       // newline used to format output
-	System.out.println("\n" + names[bestTimeIndex] + " had the best running time of "
-			   + times[bestTimeIndex]);
-	int timeIndexSecondBest = secondBestTime(times);
-	System.out.println(names[timeIndexSecondBest] + " had the second best "
-	    + "running time of " + times[timeIndexSecondBest] + "\n");             
+	System.out.println("\n" + names[bestRunningTime(times)] + " had the best "
+	    + "running time of " + times[bestRunningTime(times)]);
+	System.out.println(names[secondBestTime(times)] + " had the second best "
+	    + "running time of " + times[secondBestTime(times)] + "\n");             
 
     } //end of main
 
-/** bestRunningTime returns the index of the best running time frome the array times[]  */
+/***********************************************************************/
+/** method bestRunningTime() returns the index of the lowest
+/*  running time from the array times[]  
+/***********************************************************************/
     public static int bestRunningTime(int[] runningTimes)	{
-    	int temp = 500;                            //THInK ABOUT THIS ????????????  500????
-	int timesIndex = 0;                        
-	for (int i = 0; i < runningTimes.length; i++)	{
+    	int temp = runningTimes[0];                           
+	int lowestTimeIndex = 0;                        
+	for (int i = 0; i < runningTimes.length; i++)	{ 
 	    if (runningTimes[i] < temp)	{                                 
 		temp = runningTimes[i];
-		timesIndex = i;
+		lowestTimeIndex = i;                           
 	    } //end of if
 	} //end of for loop
-	return timesIndex;      			  //returns the index of the lowest time in the parameter array
+	return lowestTimeIndex;      //return the index of the lowest time  
     } //end of method bestRunningTime
 
-/** secondBestTime returns the index of the second best time in the array times[] */ 
+/***********************************************************************/
+/** secondBestTime() returns the index of the second lowest running
+/*  time in the array times[]. It makes a call to bestRunningTime() 
+/*  to return the index of the lowest running time which it then uses
+/*  to compare and find the second lowest running time. That value (index)
+/*  is then returned.
+/***********************************************************************/
     public static int secondBestTime(int[] runTimes)	{ 
-     	int indexBestRun = bestRunningTime(runTimes);     //bestRunningTime is called to get the index of the lowest running time.
-	int temp =  500;                //THInK ABOUT THIS ????????????  500????
-	int secondBestTimeIndex = 0;
-	for (int i = 0; i < runTimes.length; i++)	{ //for loop is used to cycle thru all values of the array
-	    if (runTimes[i] == runTimes[indexBestRun])	  //if a value in array equals lowest value it is skipped               
+	int temp =  runTimes[0];                
+	int secondLowestTimeIndex = 0;
+	for (int i = 0; i < runTimes.length; i++)	{
+	    if (runTimes[i] == runTimes[bestRunningTime(runTimes)])	                 
 	        continue;
 	    else	{
-		if (runTimes[i] < temp)	{                 //values are then compared to one another until the next lowest is found 
+		if (runTimes[i] < temp)	{                 
 		    temp = runTimes[i];
-		    secondBestTimeIndex = i;
+		    secondLowestTimeIndex = i;              
 		} //end of if
 	    } //end of else
 	} //end of for loop
-	return (secondBestTimeIndex);                     // returns the index of the second lowest time in the array
+	return (secondLowestTimeIndex); //return index of second lowest time                    
     } //end of method secondBestTime
 
 } //end of class Marathon
@@ -76,7 +82,7 @@ Name:		 Time:
 *********************
 Elena:		 341
 Thomas:		 273
-Hamilton:		 278
+Hamilton:		 278   
 Suzie:		 329
 Phil:		 445
 Matt:		 403

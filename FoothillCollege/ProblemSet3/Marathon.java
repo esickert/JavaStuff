@@ -22,7 +22,7 @@ public class Marathon	{
 		       412, 393, 299, 343, 317, 265};
 
 	System.out.println("Name:\t\tTime:"); // tabs and newlines used to format output
-	System.out.println("******************");
+	System.out.println("*********************");
 	for (int i = 0; i < names.length; i++) { 
 	    System.out.println(names[i] + ":\t\t" + times[i]);
         } // end of for loop
@@ -62,7 +62,7 @@ public class Marathon	{
 	int secondLowestTimeIndex = 0;
 	for (int i = 0; i < runTimes.length; i++)	{
 	    if (runTimes[i] == runTimes[bestRunningTime(runTimes)])	                 
-	        continue;
+	        continue;    // calls bestRunningTime(). If equal, skips.
 	    else	{
 		if (runTimes[i] < temp)	{                 
 		    temp = runTimes[i];
@@ -76,29 +76,6 @@ public class Marathon	{
 } //end of class Marathon
 
 
-/*OUTPUT:
 
-Name:		 Time:
-*********************
-Elena:		 341
-Thomas:		 273
-Hamilton:		 278   
-Suzie:		 329
-Phil:		 445
-Matt:		 403
-Alex:		 388
-Emma:		 275
-John:		 243
-James:		 334
-Jane:		 412
-Emily:		 393
-Daniel:		 299
-Neda:		 343
-Aaron:		 317
-Kate:		 265
-
-John had the best running time of 243
-Kate had the second best running time of 265
-*/
 
 

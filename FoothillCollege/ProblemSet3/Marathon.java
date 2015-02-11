@@ -11,6 +11,7 @@
 // (second lowest) time.
 /***********************************************************************/
 public class Marathon	{
+
     /**  main method  */
     public static void main(String[] args)	{
 
@@ -24,13 +25,13 @@ public class Marathon	{
 	System.out.println("Name:\t\tTime:"); // tabs and newlines used to format output
 	System.out.println("*********************");
 	for (int i = 0; i < names.length; i++) { 
-	    System.out.println(names[i] + ":\t\t" + times[i]);
+	    System.out.println(names[i] + ":\t\t" + times[i] + " minutes");
         } // end of for loop
 
 	System.out.println("\n" + names[bestRunningTime(times)] + " had the best "
-	    + "running time of " + times[bestRunningTime(times)]);
+	    + "running time of " + times[bestRunningTime(times)] + " minutes.");
 	System.out.println(names[secondBestTime(times)] + " had the second best "
-	    + "running time of " + times[secondBestTime(times)] + "\n");             
+	    + "running time of " + times[secondBestTime(times)] + " minutes.\n");             
 
     } //end of main
 

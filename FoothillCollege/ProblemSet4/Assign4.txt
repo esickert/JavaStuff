@@ -1,0 +1,4 @@
+ Write a method capitalizePlurals that accepts an ArrayList of strings and replaces every word ending with an "s" with its uppercased version.
+Write a method removePlurals that accepts an ArrayList of strings and removes every word in the list ending with an "s", case-insensitively
+
+ Write a program that reads in 10 temperature values (as doubles) for 10 days of weather, computes the average temperature, and displays the number of days that were hotter than the average. 

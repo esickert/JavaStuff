@@ -1,20 +1,17 @@
-import java.util.*;
 
 public class TestCase1	{
 
-    public static void main(int[] args)	{
-	int[] myArray = new int[10];    
+    public static void main(String[] args)	{
+	String[] myArray = new String[5];    
         
 	printMe(myMethod(myArray));
     
     } //end of main 
    
-    public static int[] myMethod(int[] stupid)	{
-	Scanner userInput = new Scanner(System.in);
-	System.out.print("Please enter a number: ");
-
-	for(int i = 0; i < 5; i++)	{
-	    stupid[i] = i;
+    public static String[] myMethod(String[] stupid)	{
+	
+	for(int i = 0; i < stupid.length; i++)	{
+	    stupid[i] = "Hello";
 	    System.out.print(" " + stupid[i]);
 	}  //end of for loop
 	System.out.println();
@@ -22,9 +19,9 @@ public class TestCase1	{
 	return stupid;
     } //end of method myMethod
 
-    public static void printMe(int[] steve)	{	
-	for (int i = 0; i < 10; i++)	{
-	    steve[i] = i;
+    public static void printMe(String[] steve)	{	
+	for (int i = 0; i < steve.length; i++)	{
+	    steve[i] = "Goodbye";
 	    System.out.print(steve[i] + " ");
 	} //end of for loop
 	System.out.println();

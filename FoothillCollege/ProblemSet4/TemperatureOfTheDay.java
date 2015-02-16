@@ -39,7 +39,7 @@ public class TemperatureOfTheDay    {
 /** pauseMessage is me playing around with java code and effects. It uses
 /*  a try-catch block to "catch" an exception that would normally be 
 /*  displayed if I used Thread.sleep() by itself. Thread.sleep() pauses
-/*  the application for effect.    
+/*  the application for effect. It can be commented out if it's too much.   
 /***********************************************************************/ 
     public static void pauseMessage()    {
         System.out.println("Okay, thankyou...Please wait!");

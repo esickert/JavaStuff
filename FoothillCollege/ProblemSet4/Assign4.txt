@@ -1,4 +1,45 @@
- Write a method capitalizePlurals that accepts an ArrayList of strings and replaces every word ending with an "s" with its uppercased version.
-Write a method removePlurals that accepts an ArrayList of strings and removes every word in the list ending with an "s", case-insensitively
+ 1)Write a method capitalizePlurals that accepts an ArrayList of strings and replaces every word ending with an "s" with its uppercased version.
+     Write a method removePlurals that accepts an ArrayList of strings and removes every word in the list ending with an "s", case-insensitively
 
- Write a program that reads in 10 temperature values (as doubles) for 10 days of weather, computes the average temperature, and displays the number of days that were hotter than the average. 
+2)  Write a program that reads in 10 temperature values (as doubles) for 10 days of weather, computes the average temperature, and displays the number of days that were hotter than  the average. 
+
+
+3)Find the maximum value of an array
+4)Find the minimum value of an array
+5)Average value of an array
+6)Reverse the elements within an array
+
+7)Examine a number and count the number of occurances of every digit.
+	ex.   the number 229231007 contains 
+			2    zero's
+			1 one
+			3 two's
+			1 seven
+			1 nine
+
+8) Write a method reverse that reverses the order of the elements in an ArrayList of strings.
+
+9) Write a method capitalizePlurals that accepts an ArrayList of strings and replaces every word ending with an "s" with its uppercased version.  DONE
+
+10) Write a method removePlurals that accepts an ArrayList of strings and removes every word in the list ending with an "s", case-insensitively.  DONE
+
+11) Write a method addStars that accepts an array list of strings as a parameter and places a * after each element.
+
+	Example: if an array list named list initially stores:
+	[the, quick, brown, fox]
+
+	Then the call of addStars(list);  makes it store:
+	[the, *, quick, *, brown, *, fox, *]
+
+
+12) Write a method removeStars that accepts an array list of strings, assuming that every other element is a *, and removes the stars (undoing what was done by addStars above).
+
+13) Write a method intersect that accepts two sorted array lists of integers as parameters and returns a new list that contains only the elements that are found in both lists.
+
+
+	Example: if lists named list1 and list2 initially store:
+	[1, 4, 8, 9, 11, 15, 17, 28, 41, 59]
+	[4, 7, 11, 17, 19, 20, 23, 28, 37, 59, 81]
+
+	Then the call of intersect(list1, list2)  returns the list:
+	[4, 11, 17, 28, 59]

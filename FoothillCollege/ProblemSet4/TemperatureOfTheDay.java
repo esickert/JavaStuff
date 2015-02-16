@@ -12,11 +12,11 @@ public class TemperatureOfTheDay    {
     /** main method */
     public static void main(String[] args) {
 
-        final int DAYS = 10;                   //sets the number of days
+        final int DAYS = 10;                //sets the number of days
         double[] degrees = new double[DAYS];
 
         degrees = getInput(degrees);
-        pauseMessage();                        //pauses the program for effect..cool!! :-)
+        pauseMessage();                     //pauses the program for effect. :-)
         calculation(degrees);
     
     } //end of main
@@ -39,7 +39,7 @@ public class TemperatureOfTheDay    {
 /** pauseMessage is me playing around with java code and effects. It uses
 /*  a try-catch block to "catch" an exception that would normally be 
 /*  displayed if I used Thread.sleep() by itself. Thread.sleep() pauses
-/*  the application for effect.    Cool, huh!?
+/*  the application for effect.    
 /***********************************************************************/ 
     public static void pauseMessage()    {
         System.out.println("Okay, thankyou...Please wait!");
@@ -47,7 +47,7 @@ public class TemperatureOfTheDay    {
             Thread.sleep(5000);                  // 1000 milliseconds is one second.
         } catch(InterruptedException exception){ // Causes the application to pause for 5 secs
             Thread.currentThread().interrupt();  // for effect  :-).  Uses try-catch 
-        } //end of try-catch                   
+        } //end of try-catch                
     }  //end of pauseMessage
 
 /***********************************************************************/

@@ -16,14 +16,13 @@ public class TemperatureOfTheDay    {
         double[] degrees = new double[DAYS];
 
         degrees = getInput(degrees);
-        pauseMessage();                     //pauses the program for effect. :-)
+        pauseMessage();
         calculation(degrees);
     
     } //end of main
 /***********************************************************************/ 
 /** method getInput prompts the user for the temperature of each day
-/*  which it loads into each element of an array. It then passes that
-/*  array back to main.
+/*  which it loads into an array. It then passes that array back to main.
 /***********************************************************************/    
     public static double[] getInput(double[] anArray)   {   
         Scanner userInput = new Scanner(System.in);
@@ -34,22 +33,22 @@ public class TemperatureOfTheDay    {
         } //end of for loop
         return anArray;
     } //end of getInput
-    
+
 /***********************************************************************/
 /** pauseMessage is me playing around with java code and effects. It uses
-/*  a try-catch block to "catch" an exception that would normally be 
-/*  displayed if I used Thread.sleep() by itself. Thread.sleep() pauses
-/*  the application for effect. It can be commented out if it's too much.   
-/***********************************************************************/ 
-    public static void pauseMessage()    {
+/* a try-catch block to "catch" an exception that would normally be
+/* displayed if I used Thread.sleep() by itself. Thread.sleep() pauses
+/* the application for effect. It can be commented out if it's too much.
+/***********************************************************************/
+    public static void pauseMessage() {
         System.out.println("Okay, thankyou...Please wait!");
         try {
             Thread.sleep(5000);                  // 1000 milliseconds is one second.
         } catch(InterruptedException exception){ // Causes the application to pause for 5 secs
-            Thread.currentThread().interrupt();  // for effect  :-).  Uses try-catch 
-        } //end of try-catch                
-    }  //end of pauseMessage
-
+            Thread.currentThread().interrupt();  // for effect :-). Uses try-catch
+        } //end of try-catch
+    } //end of pauseMessage
+    
 /***********************************************************************/
 /** method calculation takes an array of temperatures as an argument
 /*    and calculates the average temperature and number of days that
@@ -72,3 +71,21 @@ public class TemperatureOfTheDay    {
                       + decimalf.format(sum / myArray.length));
     }  //end of calculation
 } //end of class TemperatureOfTheDay
+
+
+/*OUTPUT:
+
+Please enter day 1's highest temperature: 77.6
+Please enter day 2's highest temperature: 88.3  
+Please enter day 3's highest temperature: 80.32
+Please enter day 4's highest temperature: 72.9
+Please enter day 5's highest temperature: 88.0
+Please enter day 6's highest temperature: 78.43
+Please enter day 7's highest temperature: 77.97
+Please enter day 8's highest temperature: 76.76
+Please enter day 9's highest temperature: 81.87
+Please enter day 10's highest temperature: 82.42
+Okay, thankyou...Please wait!
+The average temperature was 80.46
+There were 4 days above the average of 80.46
+*/

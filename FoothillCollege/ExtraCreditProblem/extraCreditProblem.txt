@@ -1,0 +1,7 @@
+
+
+Examine a number and count the number of occurrences of every digit.
+
+ 
+
+Example: The number 229231007 contains two 0s, one 1, three 2s, one 7, and one 9

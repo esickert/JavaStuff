@@ -1,5 +1,5 @@
 /***********************************************************************/
-/** Program Assignment 4 Part 1                      Erich Sickert 
+/** Extra Credit Array Question 2                      Erich Sickert 
 /*  The class WordsWithS has 2 method calls. One is to
 /*  capitalizePlurals(newList) and the other is removePlurals(newList).
 /*  It is used to run and demonstate the two methods. newList is an

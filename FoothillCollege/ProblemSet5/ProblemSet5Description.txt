@@ -1,0 +1,37 @@
+1.  Write a method intersect that accepts two sorted array lists of integers as parameters and returns a new list that contains only the elements that are found in both lists.
+ 
+Example: if lists named list1 and list2 initially store:
+
+  [1, 4, 8, 9, 11, 15, 17, 28, 41, 59]
+
+  [4, 7, 11, 17, 19, 20, 23, 28, 37, 59, 81]
+
+ 
+
+Then the call of intersect(list1, list2)  returns the list:
+
+  [4, 11, 17, 28, 59]
+
+2.In most word games, each letter in a word is scored according to its point value, which is inversely proportional to its frequency in English words. In Scrabble, the points are allocated as follows: 
+ 
+Points 	Letters
+1 	A, E, I, L, N, O, R, S, T, U
+2 	D, G
+3 	B, C, M, P
+4 	F, H, V,W, Y
+5 	K
+8 	J, X
+10 	Q, Z
+
+For example, the Scrabble word FARM is worth 9 points: 4 for the F, 1 each for the A and the R, and 3 for the M. Write a ConsoleProgram that reads in words and prints out their score in Scrabble, not counting any of the other bonuses that occur in the game. You should ignore any characters other than uppercase letters in computing the score. In particular, lowercase letters are assumed to represent blank tiles, which can stand for any letter but which have a score of 0.
+
+ 3. Write a method public String removeAllOccurrences(String str, char ch) that removes all occurrences of the character ch from the string str.
+
+For example, your method should return the values shown:
+
+removeAllOccurrences("This is a test", 't') returns "This is a es"
+
+removeAllOccurrences("Summer is here!", 'e') returns "Summr is hr"
+
+removeAllOccurrences("---0---", '-') returns "0"  -     remove the dashes but leave the 0
+ 

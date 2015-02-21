@@ -69,7 +69,7 @@ public class FunWithLists {                        //don't forget the class word
         }  
         catch (IndexOutOfBoundsException e)    //Okay sometimes it would throw
         {                                      //an exception but would work right after
-        System.out.println("That was weird!!!");
+        System.out.println("OUCH!! That hurt!!!");
         }
         return listC;
     } //end of intersect

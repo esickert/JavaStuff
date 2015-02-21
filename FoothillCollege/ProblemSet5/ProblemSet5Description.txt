@@ -33,5 +33,5 @@ removeAllOccurrences("This is a test", 't') returns "This is a es"
 
 removeAllOccurrences("Summer is here!", 'e') returns "Summr is hr"
 
-removeAllOccurrences("---0---", '-') returns "0"
+removeAllOccurrences("---0---", '-') returns "0"  -     remove the dashes but leave the 0
  

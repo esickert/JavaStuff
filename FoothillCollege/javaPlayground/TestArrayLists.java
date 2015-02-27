@@ -1,5 +1,5 @@
 /***********************************************************************/
-/** Assignment 5.1										Erich Sickert
+/** Assignment 5.1
 /* "Write a method intersect that accepts two unsorted array lists of
 /*  integers as parameters and returns a new list that contains only 
 /*  the elements that are found in both lists."
@@ -10,7 +10,7 @@
 /***********************************************************************/
 import java.util.*;
 
-public class FunWithLists {                        //don't forget the class word!!!
+public class TestArrayLists {                        //don't forget the class word!!!
     /** main method  */
     public static void main(String[] args)  {
 
@@ -58,7 +58,6 @@ public class FunWithLists {                        //don't forget the class word
     } //end of main
 
 /***********************************************************************/
-/*													Erich Sickert
 /**method intersect takes 2 arrayLsts of integers, listA and listB, as
 /* parameters and returns a third listC containing the intersection of
 /* those two lists. 

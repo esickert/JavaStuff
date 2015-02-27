@@ -1,7 +1,0 @@
-Examine a number and count the number of occurrences of every digit.
-Example: The number 229231007 contains two 0s, one 1, three 2s, one 7, and one 9
-
-
-Write a method capitalizePlurals that accepts an ArrayList of strings and replaces every word ending with an "s" with its uppercased version.
-
-Write a method removePlurals that accepts an ArrayList of strings and removes every word in the list ending with an "s", case-insensitively.

@@ -1,0 +1,67 @@
+1)Write a program that reads in an int from the keyboard and prints a message saying whether it is positive or negative.
+
+2)
+Write a program that reads in an int from the keyboard, and stores the int in a variable x.
+Then write a loop that prints "Hello, world!" to the screen x times.
+
+3) Write some code to read in an integer, and print ALL of the factors of that number.
+
+4)
+
+Code Sample One 											Code Sample Two
+													count = 1;
+for (int count = 1; count <= n; count++) {			while (count <= n) {
+	System.out.println(count);count = 1;			System.out.println(count);
+ 														count++;
+}													}
+
+
+ 
+Correct 	A. 	Sample One and Two are exactly equivalent for all input values of n.
+ 
+			B. 	Sample One and Two are exactly equivalent for all input values of n >=1, but differ when n<=0.
+ 
+			C. 	Sample One and Two are exactly equivalent only when n = 0.
+ 
+			D. 	Sample One and Two are exactly equivalent only when n is even.
+ 
+			E. 	Sample One and Two are not equivalent for any input values of n.
+
+
+5)
+//pre-condition: n>0
+
+//post-condition: returns n with its digits reversed
+
+//Example: if n=234, method reverse returns 432
+
+ 
+
+A. 	for(int i =0; i <= n; i++) {
+
+     rem = i % 10;
+
+     revNum = revNum * 10 + rem;
+
+	}
+ 
+B. 	for(int i =0; i <= n; i++) {
+
+     rem = n % 10;
+
+     revNum = revNum * 10 + rem;
+
+     n/=10;
+
+	}
+Missed Correct Answer
+C. 	while( n != 0) {
+
+     rem = n%10;
+
+     revNum = revNum * 10 + rem;
+
+     n/=10;
+
+	}
+

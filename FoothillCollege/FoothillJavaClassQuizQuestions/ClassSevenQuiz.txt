@@ -1,0 +1,17 @@
+Class Seven Quiz:
+
+1) Write a segment of code that takes an ArrayList of Strings named list and determines:
+
+    The length of the longest String in the list
+    The length of the shortest String in the list
+    The average length of Strings in the list - compute the average as a double value
+
+You can assume that the ArrayList has already been declared and is named list
+
+2) 
+
+When large numbers are written out on paper, it is traditional—at least in the United States—to use commas to separate the digits into groups of three. For example, the number one million is usually written in the following form: 1,000,000
+
+ 
+
+To make it easier for programmers to display numbers in this fashion, implement a method private String addCommasToNumericString(String digits) that takes a string of decimal digits representing a number and returns the string formed by inserting commas at every third position, starting on the right.

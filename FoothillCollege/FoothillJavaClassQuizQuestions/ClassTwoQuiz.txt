@@ -1,0 +1,163 @@
+1)
+At a certain school, students receive letter grades based on the following scale.
+Numeric Score  	Letter Grade
+93 or above 	A
+From 84 to 92 inclusive 	B
+From 75 to 83 inclusive 	C
+Below 75 	F
+
+Which of the following code segments will assign the correct string to grade for a given integer score?
+Option A.
+if (score >= 93)
+        grade = "A";
+if (score >= 84 && score <= 92)
+        grade = "B";
+if (score >= 75 && score <= 83)
+        grade = "C";
+if (score < 75)
+        grade = "F";
+ 
+Option B:
+if (score >= 93)
+        grade = "A";
+if (84 <=  score <= 92)
+        grade = "B";
+if (75 <= score <= 83)
+        grade = "C";
+if (score < 75)
+        grade = "F";
+ 
+Option C:
+if (score >= 93)
+        grade = "A";
+else if (score >= 84)
+        grade = "B";
+else if (score >= 75)
+        grade = "C";
+else
+        grade = "F";
+
+ 
+ 
+	A. 	Option B only
+ 	B. 	Option C only
+        C. 	Option A and B only
+	D. 	Option A and C only
+ 	E. 	Options A, B, and C
+
+Answer Key: D
+
+
+2)
+Write a code fragment that prints true if the double variables x and y are both strictly between 0 and 1 and false otherwise.
+Answer
+
+if  (x > 0) && (x < 1) && (y > 0) && (y <1)
+
+    System.out.println("true")
+
+else System.out.println("False"
+
+
+3)
+What is wrong with the following code fragment?
+
+double x = -32.2;
+boolean isPositive = (x > 0);
+if (isPositive = true) 
+     System.out.println(x + " is positive");
+else                   
+     System.out.println(x + " is not positive");
+/**************************************************************************
+//This is the code imputted into geany
+
+class test  {
+    public static void main(String[] args)  {
+
+double x = -32.2;
+boolean isPositive = (x > 0);
+if (isPositive = true) 
+     System.out.println(x + " is positive");
+else                   
+     System.out.println(x + " is not positive");
+}
+}
+
+OUTPUT:
+-32.2 is positive
+
+
+Tell me what this code is doing??????
+
+4)
+
+In the assignment statement below, what is the purpose of the (double) used?
+
+ 
+
+int x = 3, y = 2;
+
+double z = (double) x / y;
+ 
+	A. 	To double the amount of the answer, like multiplying by 2.
+Correct 	B. 	To make sure that the result of the division is a decimal number.
+ 
+	C. 	To round the answer to the nearest integer.
+ 
+	D. 	To round the answer to the nearest tenth.
+
+5)
+
+
+What does the following code fragment do for the different values of x (negative, 0, positive)?
+
+    if (x > 0);
+        System.out.println("positive");
+
+ 6)
+What is the value of a after the following code fragment is executed?
+
+    //*/
+    a = 17;
+    /*/
+    a = -17;
+    //*/
+
+7)
+
+ What does the following print?
+
+    public static void main(String[] args) { 
+       boolean nesting = true;
+       /* /* */ nesting = false; // */ 
+       System.out.println(nesting);
+    } 
+
+8)
+
+Write a static method odd() that takes three boolean inputs and returns trueif an odd number of inputs are true, and false otherwise.
+
+9)
+
+
+
+Assume the variable declarations below for this problem:
+ 
+int x = 3, y = 2, z = x + y;
+
+
+Which of the following output statements correctly displays the sentence below?
+
+3 + 2 = 5
+ 
+	A. 	System.out.print(x + “+” + y + “=” + z);
+Correct 	B. 	System.out.print(x + “ + ” + y + “ = ” + z);
+ 
+	C. 	System.out.print(x + y + “ = ” + z);
+ 
+	D. 	System.out.print(x + y = z);
+
+10)
+Suppose that a and b are boolean values.
+
+Show that the expression (!(a && b) && (a || b)) || ((a && b) || !(a || b)) is equivalent to true.

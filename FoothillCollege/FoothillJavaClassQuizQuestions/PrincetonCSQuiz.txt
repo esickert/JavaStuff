@@ -1,0 +1,24 @@
+ What is the result of the following code fragment?
+
+    int x = 5;
+    int y = 10;
+    int z = ++x * y--;
+********************************************************************
+
+What is the result of the following code fragment? Explain.
+
+    System.out.println("1 + 2 = " + 1 + 2);
+    System.out.println("1 + 2 = " + (1 + 2));
+
+  Answer: 1 + 2 = 12 and 1 + 2 = 3, respectively. If either (or both) of the operands of the + operator is a string, the other is automatically cast to a string. String concatenation and addition have the same precedence. Since they are left-associative, the operators are evaluated left-to-right. The parentheses in the second statement ensures that the second + operator performs addition instead of string concatenation. 
+
+************************************************************************
+
+What does the following code fragment print?
+
+    System.out.println(1 + 2 + "abc");
+    System.out.println("abc" + 1 + 2);  java sees the string and converts the others to strings, precedence is left to right.
+
+Answer: 3abc and abc12, respectively. The + operator is left associative, whether it is string concatenation or arithmetic plus. 
+
+************************************************************************

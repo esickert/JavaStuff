@@ -9,19 +9,22 @@ public class TestCaseStars   {
     }//end of main
 
     public static String stars(int n, int m)   {
-        String p = "";  
-        if (n == 0)
-            System.out.println();
-        else    {
+        String p = "*";  
+        if (n == 0) //{
+        //    System.out.println();
+            return p;
+//        }
+        
         //    p = p + "*";
         //    p = p + "*";
-            p = p + "*";
-            p = p + stars(n - 1, m);
-            System.out.print(p);
-            System.out.println();
+        //    p = p + "*";
+            //p = p + stars(n-1, m);
+        System.out.print(p);
+        System.out.println();
+        stars(n - 1 ,m);
             
-        } //end else
-        return p;
+//        } //end else
+    //    return p;
     } //end of stars
     
 }//end of class

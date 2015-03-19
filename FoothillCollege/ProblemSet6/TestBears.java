@@ -18,7 +18,7 @@ public class TestBears    {    //don't forget class
             System.out.println("I'm here at 42!! true");
             return true;
         }
-        else if ((n % 2) == 0)    {
+        else if (((n % 2) == 0) )    {
                 n = n / 2;
                 System.out.println(n + " I'm inside divided by 2");
                 return bears(n);

@@ -1,3 +1,18 @@
+/***********************************************************************
+/*  Assignment 7b                                     Erich Sickert
+/*                                                             
+/*  This is the second class, Library, of the 2 class assignmnent.
+/*  It uses the book class as objects and store those in an arraylist.
+/*  I useed an arraylist as the structure can expand and contract with
+/*  each addition or removal of a book. I tried to follow the guidelines
+/*  set by the assignment description.
+/*
+/*  NOTE: I set this program up to accept input from the user. It asks
+/*  for a book title and then will delete that title if in the Library. 
+/*  It then will automatically add it back to demonstrate that 
+/*  functionality. Bool lists are displayed afetr each functionality. 
+/***********************************************************************/
+
 import java.util.*;
 
 class Library    {
@@ -12,33 +27,31 @@ class Library    {
         address = libraryAddress;
     } // end of constructor
     
-    public void printOpenHours()   {            //I don't understand "static"
+    public void printOpenHours()   {           
         System.out.println("Libraries are open daily from 9am to 5pm.");
     } 
 
-    public ArrayList addBook(Book book)    {         //this doesn't really work..now it does 
+    public ArrayList addBook(Book book)    {         
         bookList.add(book);
         return bookList;
     } //end of addBook()
   
     public void borrowAvaliableBook(String bookTitle)  {
-         for (int i = 0; i < bookList.size(); i++)   {
+        for (int i = 0; i < bookList.size(); i++)   {
             if (bookList.get(i).title.equals(bookTitle))    {  
                 System.out.println(bookTitle + " is avaliable");
                 System.out.println("Borrowing " + bookTitle);
                 System.out.println("You've succesfully borrowed " + bookTitle); 
                 bookList.get(i).borrowed = true;
-            }
-//            else
-//                System.out.println(bookTitle + " is not in our catalog");
-        } // end of for loop
+            } //end of if block
+        } //end of for loop
     } // end of method
 
     public void returnBook(String bookTitle)    {
         for (int i = 0; i < bookList.size(); i++)   {
             if (bookList.get(i).title.equals(bookTitle))    
                 bookList.get(i).borrowed = false;
-        }
+        } //end of for loop
     } //end of method returnBook
             
 
@@ -48,9 +61,6 @@ class Library    {
         for (int i = 0; i < bookList.size(); i++)   {
             if (bookList.get(i).isBorrowed() == false)
                 System.out.println('"' + bookList.get(i).title + '"');
-//            else    {
-//                System.out.println("\"" + bookList.get(i).title + "\" - checked out.");
-//            } //end of ifelse
         } //end of for loop
     } //end of method printAvaliableBooks
    
@@ -59,8 +69,15 @@ class Library    {
 
     public static void main(String[] args)  {
 
+        Scanner userInput = new Scanner(System.in);
+                
         Library firstLibrary = new Library("10 Main St.");
         Library secondLibrary = new Library("228 Liberty St.");
+
+/**********************************************************************
+/*  NOTE: I added Gone with the Wind as a test case for me.
+/*
+/**********************************************************************/
 
         firstLibrary.addBook(new Book("The DeVinci Code"));
         firstLibrary.addBook(new Book("Le Petit Prince"));
@@ -80,19 +97,17 @@ class Library    {
         System.out.println("Books available in the first library:");
         firstLibrary.printAvaliableBooks();         //need to call method via firstLibrary
 
-        //firstLibrary.addBook(new Book("Gone with the Wind"));
-//        firstLibrary.bookList.get(2).borrowed = false;
-//        secondLibrary.addBook(new Book("Dune"));
-//        secondLibrary.bookList.get(0).borrowed = true;
+        System.out.print("Enter the book you wish to borrow: ");
+        String input = userInput.nextLine();
 
-        firstLibrary.borrowAvaliableBook("Gone with the Wind");
+        firstLibrary.borrowAvaliableBook(input);
         System.out.println("********");
         System.out.println("Books available in the first library:");
         firstLibrary.printAvaliableBooks();         //need to call method via firstLibrary
         System.out.println();
         System.out.println("Returning  book");
         System.out.println("********");
-        firstLibrary.returnBook("Gone with the Wind");
+        firstLibrary.returnBook(input);
 
 
 
@@ -104,5 +119,4 @@ class Library    {
         secondLibrary.printAvaliableBooks();        //need to call method via secondLibrary
         System.out.println();
     } //end of main
-
 } //end of class Library    

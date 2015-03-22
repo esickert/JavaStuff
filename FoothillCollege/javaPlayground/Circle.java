@@ -10,9 +10,16 @@ public class Circle  {
         radius = newRadius;     //this is just initializing????
     } //end of constructor
 
+    double getRadius()  {
+        return radius;
+    }
+
+ //   setRadius() {
+        
+
     /**return area of circle */
     double findArea()   {
-        System.out.println("Hello there from findArea :-)");
+//        System.out.println("Hello there from findArea :-)");
         return radius = radius * 3.14159;
     } //end of method
 
@@ -24,13 +31,13 @@ public class Circle  {
 
         double x = 2.0;
         
-        Circle var = new Circle(x);
-        System.out.println(var);
-        var.radius = 5.0;
-        System.out.println(new Circle().findArea());     //annonymous object!!!!!
-        System.out.println(var.printOut());
-        var.phrase = "A new phrase";
-        System.out.println(var.phrase);
+        Circle a = new Circle(x);
+        System.out.println(a);
+        a.radius = 5.0;
+        System.out.println(new Circle().findArea());     //annonymous object!!!!! Temporally created then destroyed
+        System.out.println(a.printOut());
+        a.phrase = "A new phrase";       // phrase is a String variable
+        System.out.println(a.phrase);     // a is a object of circle
         
         
     

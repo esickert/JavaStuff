@@ -1,7 +1,8 @@
-public class Test   {
-    public static void main(String[] aregs) {
-        Student student = new Student(123, 1970,5, 3);
-        Birthdate date = student.getBirthDate();
-        date.setYear(2010); //student birth year changed
-    }
-}
+public class Test  {
+    public static void main(String[] args)  {   
+
+        Student student = new Student(111, 1970,5 ,3);
+        BirthDate date = student.getBirthDate();
+        System.out.println(date);
+    } // end of main
+} //end of class Test

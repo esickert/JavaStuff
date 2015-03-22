@@ -1,67 +1,49 @@
-import java.util.*;
+public class Library {
+    // Add the missing implementation to this class
 
-class Library    {
-
-    String address;
-    ArrayList<String> bookList = new ArrayList<String>();
-
-    Library()   {
-    }  // end of constructor
-
-    Library(String libraryAddress)   {
-        address = libraryAddress;
-    } // end of constructor
-    
-    public void printOpenHours()   {            //I don't understand "static"
-        System.out.println("8:00am to 5:00pm, M-F");
-    } 
-
-    public ArrayList addBook(String book)    {         //this doesn't really work 
-        bookList.add(book);
-//        System.out.println(bookList);
-//        System.out.println(bookList.get(0) + " inside addbook");
-//        printAvaliableBooks(bookList);
-        return bookList;
-    }
-
-    public void printAvaliableBooks()    {
-        for (int i = 0; i < bookList.size(); i++)   {
-            System.out.println(bookList.get(i));
-        } //end of for loop
-    } //end of method printAvaliableBooks
-   
-
-//} //end of class Library
-
-    public static void main(String[] args)  {
-
+    public static void main(String[] args) {
+        // Create two libraries
         Library firstLibrary = new Library("10 Main St.");
         Library secondLibrary = new Library("228 Liberty St.");
 
-        firstLibrary.addBook(new Book("The DeVinci Code").title);
-        firstLibrary.addBook(new Book("Le Petit Prince").title);
-        firstLibrary.addBook(new Book("The Lord of the Rings").title);
-        firstLibrary.addBook(new Book("A Tale of Two Cities").title);
-        
-        Book test = new Book("This is a test");
-        firstLibrary.addBook(test.title);
-        test.borrowed = true;
-        System.out.println(test.isBorrowed());
+        // Add four books to the first library
+        firstLibrary.addBook(new Book("The Da Vinci Code"));
+        firstLibrary.addBook(new Book("Le Petit Prince"));
+        firstLibrary.addBook(new Book("A Tale of Two Cities"));
+        firstLibrary.addBook(new Book("The Lord of the Rings"));
 
-        secondLibrary.addBook(new Book("Dune").title);
+        // Print opening hours and the addresses
+        System.out.println("Library hours:");
+        printOpeningHours();
+        System.out.println();
 
         System.out.println("Library addresses:");
-        System.out.println(firstLibrary.address);
-        System.out.println(secondLibrary.address);
-        System.out.println("Library hours:");        
-        firstLibrary.printOpenHours();
-                         
-        System.out.println("Avaliable books at FirstLibrary are: ");
-        firstLibrary.printAvaliableBooks();         //need to call method via firstLibrary
+        firstLibrary.printAddress();
+        secondLibrary.printAddress();
+        System.out.println();
 
-        System.out.println("Avaliable books at SecondLibrary are: ");
-        secondLibrary.printAvaliableBooks();        //need to call method via secondLibrary
-      //  System.out.println(firstLibrary.test.borrowed());
-    } //end of main
+        // Try to borrow The Lords of the Rings from both libraries
+        System.out.println("Borrowing The Lord of the Rings:");
+        firstLibrary.borrowBook("The Lord of the Rings");
+        firstLibrary.borrowBook("The Lord of the Rings");
+        secondLibrary.borrowBook("The Lord of the Rings");
+        System.out.println();
 
-} //end of class Library    
+        // Print the titles of all available books from both libraries
+        System.out.println("Books available in the first library:");
+        firstLibrary.printAvailableBooks();
+        System.out.println();
+        System.out.println("Books available in the second library:");
+        secondLibrary.printAvailableBooks();
+        System.out.println();
+
+        // Return The Lords of the Rings to the first library
+        System.out.println("Returning The Lord of the Rings:");
+        firstLibrary.returnBook("The Lord of the Rings");
+        System.out.println();
+
+        // Print the titles of available from the first library
+        System.out.println("Books available in the first library:");
+        firstLibrary.printAvailableBooks();
+    }
+} 

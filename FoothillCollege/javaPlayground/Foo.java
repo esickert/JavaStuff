@@ -4,10 +4,10 @@ public class Foo    {
 
     public static void main(String[] args)  {
         int i = 2;
-        int j = 3;
+        int k = 3;
         
         {
-            int j = 4;
+//            int j = 4;
             System.out.println("i + j is " + i + j);
         }
 

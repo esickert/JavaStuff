@@ -1,46 +1,54 @@
-public class Circle  {
-    
-    double radius = 1.0;
-    String phrase = "";
+public class Circle{
 
-    Circle()    {     // a constructor 
-    } //end of constructor
-    
-    Circle(double newRadius)    {   
-        radius = newRadius;     //this is just initializing????
-    } //end of constructor
+    private double radius;
+    private static int numberOfObjects;  // This variable is static so it changes for all instances of class
 
-    double getRadius()  {
+    Circle()    {    //constructor
+    }
+                      
+    Circle(double newRadius)    {   //constructor
+        radius = newRadius;
+    }
+
+    public double getRadius()    {
+        double radius = 3.9;
         return radius;
     }
 
- //   setRadius() {
-        
-
-    /**return area of circle */
-    double findArea()   {
-//        System.out.println("Hello there from findArea :-)");
-        return radius = radius * 3.14159;
-    } //end of method
-
-    String printOut() {
-         return "Inside printOut";   
+    public double setRadius(double newRadius)    {
+        numberOfObjects++;
+        return radius = newRadius;  
     }
 
-    public static void main(String[] args)  {
+    public static int getNumberOfObjects()  {
+        return numberOfObjects;
+    }
 
-        double x = 2.0;
-        
-        Circle a = new Circle(x);
-        System.out.println(a);
-        a.radius = 5.0;
-        System.out.println(new Circle().findArea());     //annonymous object!!!!! Temporally created then destroyed
-        System.out.println(a.printOut());
-        a.phrase = "A new phrase";       // phrase is a String variable
-        System.out.println(a.phrase);     // a is a object of circle
-        
+    public static void printCircle(Circle temp) {
+        System.out.println("radius (" + temp.getRadius() +
+            ") and get number of Circle objects (" +
+            temp.getNumberOfObjects() + ")");
+    } //end of printCircle
+
+    public double findArea()    {
+        numberOfObjects++;
+        return radius = radius * Math.PI;
+    }
+
+//    public static void main(String[] args)  {
+//        Circle userCircle = new Circle(5);
+//        Circle circle2 = new Circle(2);
+/*        System.out.println(userCircle.getRadius());
+        userCircle.setRadius(3);
+        System.out.println(userCircle.getRadius());
+        System.out.println(userCircle.findArea());
+        System.out.println(circle2.findArea());
+        System.out.println(circle2.findArea());     */
+//        System.out.println(getNumberOfObjects());
+//    } // end of main
+}// end of class       
         
     
-    } // end of main
 
-} // end of class Circle
+    
+        

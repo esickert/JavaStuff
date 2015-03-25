@@ -1,22 +1,30 @@
-public class Foo    {
-    static int i = 0;
-    static int j = 0;
+public class Test   {
 
-    public static void main(String[] args)  {
-        int i = 2;
-        int j = 3;
+    double radius;
         
-        {
-            int j = 4;
-            System.out.println("i + j is " + i + j);
-        }
+    Test()  {
+    }
 
-        k = i + j;
-        System.out.println("k is " + k);
-        System.out.println("j is " + j);
-    
-    } //end of main
+    Test(double radius)  {
+        this.radius = radius;
+    }   
+
+    public double printRadius()   {
+        return radius;
+    }
+
+    public double findArea()  {
+        return radius * (radius * Math.PI);
+    }
+
+/*    public static void main(String[] args)  {
+        Test a = new Test();
+        Test b = new Test();
+
+        System.out.println(b.printRadius());
+        a.radius = 4.987;
+        System.out.println("Radius of a is " + a.radius);
+        System.out.println("Radius of b id " + b.radius);
+    } //end of main  */
 } //end of class
-    
-
         

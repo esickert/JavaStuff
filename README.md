@@ -1,7 +1,7 @@
 JavaStuff
 =========
 
-All my java code from class and such.
+All my java code.
 JAVA WA WA.
 
-These are all the programming assignments from my java class. Also included are code tigbits of my own just fooling around
+Programming assignments and my own stuff.

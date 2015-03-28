@@ -1,3 +1,13 @@
+/***********************************************************************
+/*  Assignment 7a                                  Erich Sickert
+/*
+/*  This is the first of two classes. The book class creates a book with
+/*  with 2 fields title and borrowed. Title is a String and borrowed is
+/*  a boolean valuse. Various methods are used to set the title of an
+/* object and whether the book is borrrowed or not. These methods and
+/* fields are called in the library class when a book object is created.
+/**********************************************************************/ 
+
 public class Book   {
 
     String title;

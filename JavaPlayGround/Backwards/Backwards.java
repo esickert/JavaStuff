@@ -1,21 +1,26 @@
-import java.util.*;
-
 public class Backwards    {
 
     public static void main(String[] args)  {
+        String str = "mississippi";
 
-    Scanner userInput = new Scanner(System.in);
-    System.out.print("Enter a word: ");
-    String word = userInput.next();
+        char[] word = str.toCharArray();
+        char[] drow = new char[word.length];  //don't forget that index starts at 0
 
-    char[] charArray = word.toCharArray();
-//    char[] charArray[0];
-    System.out.println(charArray.length);
-   // String temp = charArray[0];
-//    System.out.println(charArray[charArray.length - 1]);   //outOfBounds because indices start at 0; need -1
-    for (int i = (charArray.length - 1); i >= 0; i--)
-        System.out.print(charArray[i]);
-    System.out.println();
+        for (int i = 0; i < word.length; i++)   {  // str.length() -1 because index starts at 0!
+                drow[i] = word[(word.length -1)-i];
+        }
+
+        for ( int i = 0; i <= drow.length -1; i++) {
+            System.out.print(drow[i]); //        
+ 
+        }
+        System.out.println();
+        String reverse = new String(drow);
+        System.out.println(reverse);
+        if (str.equals(reverse))
+            System.out.println(reverse + " is a palidrone of " + str);
+        else 
+            System.out.println(reverse + " is NOT a palidrone of " + str);
 
     } // end of main
-}// end of class
+} // end of class

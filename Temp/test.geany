@@ -13,10 +13,11 @@ detect_indent_width=false
 indent_mode=0
 
 [project]
-name=TestCircle
-base_path=/home/esickert/JavaStuff/JavaPlayGround/TestCircle
+name=test
+base_path=/home/esickert/Temp
 description=
+file_patterns=
 
 [long line marker]
-long_line_behaviour=1
+long_line_behaviour=2
 long_line_column=72

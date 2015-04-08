@@ -1,0 +1,33 @@
+
+Working on Assignment
+Assignment #3 - "A linked list of Employees"
+  Instructions
+Assignment #3 - "A linked list of Employees"     (worth 5 points)
+(worth 5 points)
+
+Objectives:        Create a container class where one object contains a list of Employee objects.
+
+                          Implement your own linked list of Employee objects.
+
+Material from:    Handout Packet “Linked List”
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+Starting with your class Employee and class EmployeeConsoleView, for this assignment you will create a third class called “EmployeeList”. One object of class EmployeeList will contain a linked list of Employee objects. We need to be able to add a new Employee object to the EmployeeList and we need to be able to get a String containing the data from the whole list of Employee objects.
+
+Therefore, your new class EmployeeList contains:
+
+•     a linked list of Employee objects, that can store as many objects as the main() might want to add to it.
+
+•     a constructor that creates an empty EmployeeList object.
+
+•     a method "add()" that takes an Employee object as parameter and adds that new object to the end of the List.
+
+•     a method toString() which returns a string containing information about every Employee in the List.
+
+In order to test class EmployeeList, you will need to write an additional new class EmployeeListTest that will call the EmployeeList constructor, create some Employee objects and add them to the EmployeeList, and then print the returned value from the EmployeeList’s toString() method to make sure that the Employee objects got into the list successfully. The data for your Employee objects can just be literals in the main(), or you can use the EmployeeConsoleView class to get the data from the keyboard at runtime.
+
+HINT: The fastest and easiest way to complete this assignment is to write class EmployeeListTest first, to give you an idea of how to use the class EmployeeList.
+Find and select the file from your computer and then click on "Upload" to upload it.
+
+ 

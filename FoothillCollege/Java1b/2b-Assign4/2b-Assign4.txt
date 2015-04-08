@@ -1,0 +1,57 @@
+
+Working on Assignment
+Assignment #4 - "More Employees"
+  Instructions
+Assignment #4 - "More Employees"     (worth 5 points)
+(worth 5 points)
+
+Objective:         Extend class Employee to create two new classes
+
+Material from:   Chapter 13 from Wu textbook and "Class Handouts"
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+Modify your latest (and best) source code for class Employee in the following ways:
+
+1)   Add a new public method called raise() to class Employee. This method takes a double "percentRaise" as parameter and returns void. "percentRaise " is actually a percentage raise. When you call this method and send it a double "percentRaise", this method adds "percentRaise"% of the current salary to the salary member of the object that calls it. Test your new method thoroughly before proceeding.
+
+2) Define a new class named "Manager" that extends class Employee with 2 additional instance variables:
+
+    title - title of the manager
+    bonus - dollar amount of annual bonus
+
+and the necessary new methods:
+
+    toString()
+    getter and setter for each of the new instance variables
+    default and parameterized constructors for class Manager, parameterized constructor has 5 parameters.
+
+HINT: In order to save time, thoroughly test your class Manager before proceeding.
+
+3)   Define a new class named "Worker" that also extends class "Employee" with 2 additional instance variables:
+
+    boss - name of the Worker's boss
+    department - name of the department that the Worker works in
+
+and the necessary new methods:
+
+    toString()
+    getter and setter for each of the new instance variables
+    default and parameterized constructors for class Worker. The parameterized constructor has 5 parameters
+
+4)   Now add code to your main() to create an EmployeeList (from Assignment 3) and prove that you can add Employee objects, Manager objects and Worker objects all to the same EmployeeList object. Do not make any change to your class EmployeeList for this usage.
+
+Add a method to class EmployeeList called raise() that also takes a percentRaise as parameter. This method in class EmployeeList raises the salary of EVERY Employee object in the list. Thoroughly test this method on the EmployeeList object.
+
+NOTES:
+
+• Rewrite main() completely. Test each new class independently, but keep the test code in your main so that in the end the main() contains enough lines to prove that every method works. If main() becomes too long, split it up into separate methods that main() can call when it is testing different features of the program.
+
+• You only need to define the method raise() on the superclass Employee because it will work exactly the same way with all three classes. This is because Managers are Employees and Workers are Employees. Thoroughly test that the one raise() method works with all three types of Objects: Employees, Managers and Workers.
+
+• You must use "super()" from the subclass constructors to call the superclass constructors (and any other superclass methods) when required.
+
+ 
+
+
+  

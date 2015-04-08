@@ -4,4 +4,4 @@ JavaStuff
 All my java code.
 JAVA WA WA.
 
-Programming assignments and my own stuff.
+I use git to track my programming assignments and personal projects that I may have.

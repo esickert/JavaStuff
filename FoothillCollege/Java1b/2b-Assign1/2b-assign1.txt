@@ -1,0 +1,107 @@
+
+Working on Assignment
+Assignment #1 - "Pay Table"
+  Instructions
+Assignment #1 - "Pay Table"     (worth 5 points)
+(worth 5 points)
+
+Objectives:       Define a new class where one object represents a table showing the pay scale for
+
+                         hourly employees.
+
+                         Define a Java application that tests the new class.
+
+                         Practice with two dimensional arrays.
+
+                         Become accustomed to the programming style required for this class.
+
+Material from:   Program Guidelines from "Class Handouts"
+
+                         Chapter 10 from Wu textbook
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+Write a new class called PayScaleTable where one object represents a table containing all of the hourly rates for employees. Each object of this class has a two dimensional array where the row represents the pay grade that an employee is hired into and the column represents the number of years of experience that employee has in that pay grade.
+
+ 
+
+This company has three pay grades and employees get a raise each year that they stay at that grade for up to four years. Therefore, the pay scale table has three rows (one for each pay grade) and five columns (one for each year of experience, stating  at 0.) Pay grade 1 has a base rate of $20 per hour, pay grade 2 has a base rate of $27.50 and pay grade 3 has a base rate of $35 per hour. For each year that the employee remains at a particular pay grade she gets $1.50 per hour raise. All of these numbers must be named final variables in class PayScaleTable so that they are easy to change.
+
+ 
+
+You must also write a separate class to test your class PayScaleTable. The exact main() below must create the desired output, which is specified in the inline comments.
+
+ 
+
+/**
+
+ *  Tests class PayTable by creating one object from it and
+
+ *  calling methods on it.
+
+ */
+
+class TestPayScaleTable {
+
+   public static void main(String args[])  {
+
+      PayScaleTable table;
+
+      table = new PayScaleTable ();   
+
+      System.out.println(table);
+
+ 
+
+      System.out.println(table.rate(1,4));
+
+      //  An employee with pay grade 1 and 4 years experience
+
+      //  earns $26 per hour, so the output is: 26.00
+
+ 
+
+      System.out.println(table.rate(2,0));
+
+      //  An employee just starting at pay grade 2
+
+      //  earns $27.50 per hour, so the output is: 27.50
+
+ 
+
+      System.out.println(table.rate(2,1));
+
+      //  An employee with pay grade 2 and 1 year experience
+
+      //  earns $29 per hour, so the output is: 29.00
+
+ 
+
+      System.out.println(table.rate(3,2));
+
+      //  An employee with pay grade 3 and 2 years experience
+
+      //  earns $38 per hour, so the output is: 38.00
+
+   }
+
+}
+
+ 
+
+In order to receive full credit on this assignment, your program must:
+
+    follow all program guidelines, see handout packet for the program guidelines
+    get the correct results when the exact main() given above is run
+    include an exact recording of the console when your program is run. This must NOT be a screen shot but instead a copy and paste from the console to a text file
+
+Find and select the file from your computer and then click on "Upload" to upload it.
+
+f you look at the examples in the handouts, and in the programming guidelines, it looks like the toString method is expected to be locally defined to replace the inherited default method.
+
+My $0.02...
+
+
+ Typically toString() will be defined to return a String that contains all of the data (i.e. private variables) inside the object. This is not necessarily formatted perfectly, but if the caller (usually main()) prints this String that is returned from toString(), it will be easy to see what data is inside the object.
+
+toString()  is usually used for testing a class. The caller makes an object, prints it by printing the returned value from toString(), manipulates the object and then prints it again. In this way, the caller can see how an object changes in response to various methods being called on the object.

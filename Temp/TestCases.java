@@ -7,7 +7,7 @@ public class TestCases  {
     private double basePay;
     
 
-    double[][] test = new double[3][5];
+    static double[][] test = new double[3][5];
 
 //    test = new int[3][5];
 

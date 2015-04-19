@@ -9,8 +9,6 @@ public class TestCases  {
 
     static double[][] test = new double[3][5];
 
-//    test = new int[3][5];
-
     TestCases() {     //constructor
     }
 

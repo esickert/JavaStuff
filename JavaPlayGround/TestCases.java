@@ -12,7 +12,7 @@ public class TestCases  {
     TestCases() {     //constructor
     }
 
-    TestCases(int newNum)   {      //contructor
+    TestCases(int newNum)   {      //constructor
         number = newNum;
     }
 

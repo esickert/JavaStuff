@@ -21,3 +21,9 @@ file_patterns=
 [long line marker]
 long_line_behaviour=2
 long_line_column=72
+
+[build-menu]
+JavaFT_00_LB=_Compile
+JavaFT_00_CM=javac "%f" 
+JavaFT_00_WD=
+filetypes=Java;

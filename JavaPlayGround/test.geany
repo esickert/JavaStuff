@@ -24,6 +24,12 @@ long_line_column=72
 
 [build-menu]
 JavaFT_00_LB=_Compile
-JavaFT_00_CM=javac "%f" 
+JavaFT_00_CM=javac "%f"  
 JavaFT_00_WD=
-filetypes=Java;
+filetypes=Java;Python;
+PythonFT_00_LB=_Compile
+PythonFT_00_CM=python -m py_compile "%f"
+PythonFT_00_WD=
+EX_00_LB=_Execute
+EX_00_CM=java "%e"  
+EX_00_WD=

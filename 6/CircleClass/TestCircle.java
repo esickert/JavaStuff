@@ -3,14 +3,17 @@ import java.util.*;
 public class TestCircle {
     /** Main Method  */
     public static void main(String[] args)  {
-
-        Scanner userInput = new Scanner(System.in);
-        System.out.print("Please input a radius value: ");
-        int n = userInput.nextInt();
+          int n = 2;
+//        Scanner userInput = new Scanner(System.in);
+//        System.out.print("Please input a radius value: ");
+//        int n = userInput.nextInt();
         /** Create a cicle with radius n */
         Circle myCircle;
         myCircle = new Circle(n);
         Circle anotherCircle = new Circle();
+        Square newSquare = new Square(n);
+/*        System.out.println("A new square is side " + n);
+        System.out.println("The area of square with side " + n + " is " + newSquare.areaSquare());
         anotherCircle.setRadius(1.0);
         System.out.println(n);
         System.out.println("A radius of myCircle is " + myCircle.getRadius());
@@ -19,6 +22,18 @@ public class TestCircle {
         printArea(myCircle, n);
         printArea(anotherCircle, 3);
         System.out.println("The number of object instances is " + Circle.getNumberOfObjects());
+
+        /**       example of the this keyword  
+        System.out.println("Using the this keyword returns i as " + newSquare.setI(1));
+/***********************************************************************/
+        Circle[] arrayOfCircles = new Circle[10];
+//        for (int i = 0; i < arrayOfCircles.length; i++)  {
+//            arrayOfCircles[i] = new Circle();
+//        }
+        for (int i = 0; i < arrayOfCircles.length; i++)  {
+            System.out.println(arrayOfCircles[i]);
+        }
+
     }
 
     /** passing an object by value  */

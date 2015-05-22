@@ -23,10 +23,13 @@ long_line_behaviour=2
 long_line_column=72
 
 [build-menu]
-filetypes=Python;
+filetypes=Python;Java;
 PythonFT_01_LB=python
 PythonFT_01_CM=
 PythonFT_01_WD=
 PythonFT_00_LB=_Compile
 PythonFT_00_CM=python -m py_compile "%f"
 PythonFT_00_WD=
+JavaFT_00_LB=_Compile
+JavaFT_00_CM=javac "%f" 
+JavaFT_00_WD=

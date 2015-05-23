@@ -33,3 +33,6 @@ PythonFT_00_WD=
 JavaFT_00_LB=_Compile
 JavaFT_00_CM=javac "%f" 
 JavaFT_00_WD=
+JavaFT_01_LB=Compile junit
+JavaFT_01_CM=
+JavaFT_01_WD=

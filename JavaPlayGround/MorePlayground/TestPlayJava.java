@@ -6,8 +6,8 @@ public class TestPlayJava   {
         
         PlayJava me = new PlayJava("My only friend the end");
         me.printString();
-        //me.put(tmp);
-        System.out.println(me.Reverse(tmp));
+        System.out.println(me.Reverse(me.get()));
+        me.put(tmp);
         System.out.println(me.Reverse(me.get()));
 //        System.out.println(me.Reverse(me.get()));
         me.printString();

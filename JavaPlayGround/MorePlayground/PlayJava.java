@@ -1,7 +1,11 @@
 public class PlayJava   {
 
     private String temp;
-    String[][] mine;
+    String[][] myArray = {
+		{"A1", "A2", "A3"},
+		{"B1", "B2", "B3"},
+		{"C1", "C2", "C3"}
+	};
     
     PlayJava()  {
     }
@@ -26,8 +30,8 @@ public class PlayJava   {
         return  reverseChar;
     }
 
-    public String put(String str)  {
-        return temp = str;
+    public void put(String str)  {
+        temp = str;
     }
 
     public String get() {

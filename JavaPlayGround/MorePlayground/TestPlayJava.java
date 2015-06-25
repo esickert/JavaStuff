@@ -11,8 +11,8 @@ public class TestPlayJava   {
 		{"C1", "C2", "C3"}
 		};*/
 		for(int i = 0; i <= me.myOtherArray.length; i++)	{  // array length not declared!!
-			me.myOtherArray[i] = "Hello";
-			System.out.println(me.myOtherArray[i]);
+			me.myOtherArray[i] = "Hello    ";
+			System.out.print(me.myOtherArray[i]);
 		}
         me.printString();
         System.out.println(me.Reverse(me.get()));

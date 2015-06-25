@@ -6,7 +6,8 @@ public class PlayJava   {
 		{"B1", "B2", "B3"},
 		{"C1", "C2", "C3"}
 	};
-    
+	String[] myOtherArray;  //this array length is not declared.
+	
     PlayJava()  {
     }
 

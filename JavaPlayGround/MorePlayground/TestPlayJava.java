@@ -5,10 +5,21 @@ public class TestPlayJava   {
         String tmp = "This is the end, my friend";
         
         PlayJava me = new PlayJava("My only friend the end");
+<<<<<<< HEAD
 
 		for(int i = 0; i <= me.myOtherArray.length - 1; i++)	{  // array length not declared!! now it is !!!
 			me.myOtherArray[i] = "Hello";  //remember array length is - 1 because we start at 0
 			System.out.println(me.myOtherArray[i]);
+=======
+/*        me.myArray = {
+		{"A1", "A2", "A3"},
+		{"B1", "B2", "B3"},
+		{"C1", "C2", "C3"}
+		};*/
+		for(int i = 0; i <= me.myOtherArray.length; i++)	{  // array length not declared!!
+			me.myOtherArray[i] = "Hello    ";
+			System.out.print(me.myOtherArray[i]);
+>>>>>>> 13e4821aaaa6a176dadd6b6eaf019de4a3938a82
 		}
         me.printString();
         System.out.println(me.Reverse(me.get()));

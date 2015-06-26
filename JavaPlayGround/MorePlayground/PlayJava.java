@@ -1,3 +1,5 @@
+import java.util.*;
+
 public class PlayJava   {
 
     private String temp;
@@ -6,13 +8,15 @@ public class PlayJava   {
 		{"B1", "B2", "B3"},
 		{"C1", "C2", "C3"}
 	};
-	String[] myOtherArray;  //this array length is not declared.
+	String[] myOtherArray = new String[10];                //this array length is not declared...now it is!!
+	ArrayList<String> myList = new ArrayList<String>(10);  //add an ArrayList with size 10
+	ArrayList mySecondArrayList = new ArrayList();         //arraylist with no defined size.
 	
-    PlayJava()  {
+    PlayJava()  {           //constructor
     }
 
     PlayJava(String newString)  {
-        temp = newString;
+        temp = newString;   //constructor
     }
 
     public void printString()   {   
@@ -20,7 +24,7 @@ public class PlayJava   {
     }
 
     public String Reverse(String temp) {
-        char[] characters = temp.toCharArray();
+        char[] characters = temp.toCharArray();  //convert a string into a character array
         char[] charReverse = new char[temp.length()];
         for(int i = characters.length - 1; 0 <= i; i--) {
             charReverse[(characters.length -1) - i] = characters[i];

@@ -17,7 +17,7 @@ public class TestPlayJava   {
 	    {"B1", "B2", "B3"},
 	    {"C1", "C2", "C3"}
 	};*/
-	for(int i = 0; i <= me.myOtherArray.length; i++)	{  // array length not declared!!
+	for(int i = 0; i <= me.myOtherArray.length - 1; i++)	{  // array length not declared!!
 	    me.myOtherArray[i] = "Hello    ";
 	    System.out.print(me.myOtherArray[i]);
         }

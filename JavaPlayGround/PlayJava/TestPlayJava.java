@@ -17,7 +17,7 @@ public class TestPlayJava   {
 	    {"B1", "B2", "B3"},
 	    {"C1", "C2", "C3"}
 	};*/
-	for(int i = 0; i <= me.myOtherArray.length; i++)	{  // array length not declared!!
+	for(int i = 0; i <= me.myOtherArray.length - 1; i++)	{  // array length not declared!!
 	    me.myOtherArray[i] = "Hello    ";
 	    System.out.print(me.myOtherArray[i]);
         }
@@ -33,6 +33,7 @@ public class TestPlayJava   {
 		System.out.print(me.myArray[i][j]);
 	    }
 	}
+	System.out.println();
 // myList is an ArrayList of String values		
 	for(int i = 0; i <= 10; i++)	{
 	    me.myList.add(i,"Took a face from the ancient gallery"); //note that I can reference the arraylist index!! That's NEW to me.

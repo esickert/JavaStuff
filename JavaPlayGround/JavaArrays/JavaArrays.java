@@ -1,8 +1,11 @@
+import java.util.*;
+
 public class JavaArrays   {
 
     private String[] myArray;
-
     private String[][] my2DArray;
+    
+    //static String toString()
 
     JavaArrays()    {
     }
@@ -11,7 +14,11 @@ public class JavaArrays   {
         my2DArray = temp;
     }
 
-    public void loadArray(String x)  {
+    public void printString(int[] temp) {
+        System.out.println(Arrays.toString(temp));
+    }
+    
+    public void loadArray(String x)  {   //null pointer exception- no array length being set!!
         for(int i = 0; i <= my2DArray.length -1; i++) {
             for(int j = 0; j <= my2DArray[i].length - 1; j++)
                 my2DArray[i][j] = x;

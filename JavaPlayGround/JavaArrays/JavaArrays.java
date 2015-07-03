@@ -7,7 +7,8 @@ public class JavaArrays   {
     
     //static String toString()
 
-    JavaArrays()    {
+    JavaArrays(String[] x)    {
+        myArray = x;
     }
 
     JavaArrays(String[][] temp)   {

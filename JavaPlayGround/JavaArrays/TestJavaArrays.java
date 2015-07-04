@@ -2,7 +2,7 @@ import java.util.*;
 
 public class TestJavaArrays {
     public static void main(String[] args)  {
-        String[] test = new String[5];   //null pointer exception trying to use
+        String[] test = new String[5];   //null pointegitr exception trying to use
         int[][]  testArray2 = new int[4][5];  //local array being passed to class JavaArray
 
         JavaArrays myStuff = new JavaArrays(testArray2); //array being passed to class JavaArrays 

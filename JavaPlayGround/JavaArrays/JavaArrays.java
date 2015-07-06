@@ -20,9 +20,10 @@ public class JavaArrays   {
     }
     
     public void loadArray()  {   //null pointer exception- no array length being set!!
+        int j = 0;
         for(int i = 0; i <= my2DArray.length -1; i++) {
-            for(int j = 0; j <= my2DArray[i].length - 1; j++)
-                my2DArray[i][j] = i;
+            for(j = 0; j <= my2DArray[i].length - 1; j++)   
+                my2DArray[i][j] = j;
         }
     }
     

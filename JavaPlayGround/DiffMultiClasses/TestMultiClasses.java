@@ -1,23 +1,27 @@
 import java.util.*;
 
-public class TestStringClasses  {
+public class TestMultiClasses  {
 
     public static void main(String[] args)  {
 
-    ArrayList<String> a = new ArrayList<String>(10);  //this is setting the arrayLists initial capacity
+    ArrayList<String> a = new ArrayList<String>(3);  //this is setting the arrayLists initial capacity
     System.out.println(a.size());
-    for(int i = 0; i < 5; i++) {   
+    for(int i = 0; i <= 3; i++) {   
         a.add(i, "Hello there! Using an ArrayList!!");  //.add is a method of the ArrayList class
     }
-    for(int i = 0; i <= a.size() - 1; i++) {
-        System.out.println(a.get(i));  //.get is a method of the ArrayList class. Prints the above!!
-    }
+//    System.out.println(a.size());
+//    for(int i = 0; i <= a.size() - 1; i++) {
+//        System.out.println(a.get(i));  //.get is a method of the ArrayList class. Prints the above!!
+//    }
     
-    Character character  = new Character('q'); //char is a primitive data type wrapped in a Character class
-    System.out.println(character);
-    boolean b = character.isDigit('m');
-    System.out.println(a);
-
+    StringClasses tester = new StringClasses();  //this is weird, using gthe StringClass!!
+    tester.printAList(a);  // a is an arraylist
+    
+    Ch character  = new Ch('z'); //char is a primitive data type wrapped in a Character class
+//    System.out.println("line 21 " +character);
+//    boolean b = character.isDigit('m');
+//    System.out.println(a);
+    character.printCharac();
 /********************************************************************/
 /** StringBuffer class...very cool!!      **/
     StringBuffer me = new StringBuffer(0);   //StringBuffer is a class
@@ -43,8 +47,9 @@ public class TestStringClasses  {
     System.out.println("Is " + test + " and " + erich + " a palindrone??:" + isPalindrone); //this now works!!!
 
 /**********************************************************************/
-/** StringTokenizer class **/
- 
+/** StringTokenizer class - don't use this (retired??). These are extra classes from the api for string manipulation **/
+/** StringBuilder class    //"overkill" of the StringBuffer class      **/
+/** So I want to play with arraylits and stringbuffers!!!!!!      **/
 
 
     }

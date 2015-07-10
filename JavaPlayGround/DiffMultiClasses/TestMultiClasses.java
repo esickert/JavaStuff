@@ -6,13 +6,13 @@ public class TestMultiClasses  {
 
     ArrayList<String> a = new ArrayList<String>(3);  //this is setting the arrayLists initial capacity
     System.out.println(a.size());
-    for(int i = 0; i <= 3; i++) {   
-        a.add(i, "Hello there! Using an ArrayList!!");  //.add is a method of the ArrayList class
-    }
-//    System.out.println(a.size());
-//    for(int i = 0; i <= a.size() - 1; i++) {
-//        System.out.println(a.get(i));  //.get is a method of the ArrayList class. Prints the above!!
+//    for(int i = 0; i <= 3; i++) {   
+//        a.add(i, " Hello there! Using an ArrayList!! ");  //.add is a method of the ArrayList class
 //    }
+//    System.out.println(a.size());
+    for(int i = 0; i <= a.size() - 1; i++) {
+        System.out.println(a.get(i));  //.get is a method of the ArrayList class. Prints the above!!
+    }
     
     StringClasses tester = new StringClasses();  //this is weird, using gthe StringClass!!
     tester.printAList(a);  // a is an arraylist

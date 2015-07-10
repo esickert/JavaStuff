@@ -14,7 +14,7 @@ public class StringClasses  {
     
     public void printAList(ArrayList b) {
         for(int i = 0; i <= b.size() - 1; i++)  {
-            System.out.println("This is inside class StringClasses " + b.get(i));
+            System.out.println(" This is inside class StringClasses " + b.get(i));
         }
     }
 }

@@ -5,11 +5,10 @@ public class TestMultiClasses  {
     public static void main(String[] args)  {
 
     ArrayList<String> a = new ArrayList<String>(3);  //this is setting the arrayLists initial capacity
-<<<<<<< HEAD
     System.out.println(a.size());
 //    for(int i = 0; i <= 3; i++) {   
 //        a.add(i, " Hello there! Using an ArrayList!! ");  //.add is a method of the ArrayList class
-=======
+
     System.out.println("Line 8 The size of the ArrayList is " + a.size());
     for(int i = 0; i <= 3; i++) {   
         a.add(i, "Hello there! Using an ArrayList!!");  //.add is a method of the ArrayList class
@@ -18,7 +17,7 @@ public class TestMultiClasses  {
 //    System.out.println(a.size());
 //    for(int i = 0; i <= a.size() - 1; i++) {
 //        System.out.println(a.get(i));  //.get is a method of the ArrayList class. Prints the above!!
->>>>>>> 07f682e18595b5cd21ac89a6c6c3a4dffa61fac2
+
 //    }
 //    System.out.println(a.size());
     for(int i = 0; i <= a.size() - 1; i++) {

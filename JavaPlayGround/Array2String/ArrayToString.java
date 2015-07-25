@@ -1,3 +1,5 @@
+import java.util.*;
+
 public class ArrayToString  {
     
     double[] myArray = new double[5];
@@ -23,8 +25,9 @@ public class ArrayToString  {
         for(int i = 0; i < a.length; i ++)  {
             System.out.println();
             for(int j = 0; j < a[i].length; j++)    {
-                System.out.println(a[i][j]);
+                System.out.print(a[i][j] + "   ");
             }
+        System.out.println();
         }
     }
 

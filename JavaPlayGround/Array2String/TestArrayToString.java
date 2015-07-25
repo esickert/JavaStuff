@@ -8,9 +8,6 @@ public class TestArrayToString    {
 
     double[][] test2D = new double[3][3];
     ArrayToString test = new ArrayToString(test1D);
-
-
-
     
     System.out.println(test1D);
     test.print1DArray(test1D);

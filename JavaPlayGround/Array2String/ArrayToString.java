@@ -3,7 +3,7 @@ import java.util.*;
 public class ArrayToString  {
     
     private double[] myArray = new double[5];
-    private double[][] myOtherArray = new double[2][3];
+//    private double[][] myOtherArray = new double[2][3];
 
     ArrayToString() {
     }
@@ -12,9 +12,9 @@ public class ArrayToString  {
         myArray = a;
     }
 
-    ArrayToString(double[][] a) {
-        myOtherArray = a;
-    }
+//    ArrayToString(double[][] a) {
+//        myOtherArray = a;
+//    }
     
 //    String toString   
 
@@ -24,7 +24,7 @@ public class ArrayToString  {
         }
     }
  
-    public void print2DArray(double[][] a)  {  
+/*    public void print2DArray(double[][] a)  {  
         for(int i = 0; i < a.length; i ++)  {
             System.out.println();
             for(int j = 0; j < a[i].length; j++)    {
@@ -32,7 +32,7 @@ public class ArrayToString  {
             }
         System.out.println();
         }
-    }
+    }  */
 
 }
     

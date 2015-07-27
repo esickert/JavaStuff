@@ -9,8 +9,11 @@ public class Strings    {
         int number = userInput.nextInt();
         String str = "Hi", result;
         int n = 5;
-
-        System.out.println(bounce(word,number));   
+        StringBuffer buff = new StringBuffer("Hello");
+        buff.append(" world");
+        System.out.println(buff);
+        System.out.println(bounce(word,number)); 
+  
 
     }  //end of main
 

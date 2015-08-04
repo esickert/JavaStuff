@@ -1,22 +1,20 @@
 import java.util.*;
 
-public class TestArrayToString    {
+public class TestPayScaleTable    {
 
     public static void main(String[] args)  {
+        
+    double[][] pay = {{0.00, 20.00, 27.50, 35.00},
+                     {0.00, 21.50, 29.00, 36.50},
+                     {0.00, 23.00, 30.50, 38.00},
+                     {0.00, 24.50, 32.00, 39.50}};
 
-    double[] test1D = new double[5];
-
-
-    double[][][] test2D = new double[3][3][7];
-    ArrayToString test = new ArrayToString();
-
-    
-    System.out.println(test2D);
-//    test.print1DArray(test1D);
-//  test.print2DArray(test2D);
-    String stuff = Arrays.deepToString(test2D);
-    System.out.println(stuff);  //Arrays is a class from util!!!!
-//    test.print2DArray(test2D);
+    PayScaleTable table = new PayScaleTable(pay);
+        
+    String table = table.convertArrayToString(table.payScaleTable);
+    System.out.println(table);  //this is correct!!!
+    payScale.print2DArray(table.payScaleTable);
+    System.out.println();
     
     }
 }

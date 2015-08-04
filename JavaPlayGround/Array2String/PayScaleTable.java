@@ -1,6 +1,6 @@
 import java.util.*;
 
-public class ArrayToString  {
+public class PayScaleTable  {
     
     double a,b,c,d,e,f,g,h,i;
     
@@ -9,11 +9,15 @@ public class ArrayToString  {
                                 {g, h, i}}
                                 ;
 
-    ArrayToString() {
+    PayScaleTable() {
     }
     
-    ArrayToString(double[][] a)   {
+    PayScaleTable(double[][] a)   {
         payScaleTable = a;
+    }
+    
+    public double rate(int a, int b)    {
+        return payScaleTable[a][b];
     }
 
     public String convertArrayToString(double[][] a)  {
@@ -21,7 +25,7 @@ public class ArrayToString  {
         return stuff1;
     }
     
-    String stuff1 = Arrays.toString(payScaleTable);
+//    String stuff1 = Arrays.toString(payScaleTable);
     
     public void print2DArray(double[][] a)    {
         for(int i = 0; i < a.length; i++)   {

@@ -1,4 +1,4 @@
-java "TestArrayToString"
+java "TestStrings"
 
 pause
 del "%0"

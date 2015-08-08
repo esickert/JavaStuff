@@ -4,10 +4,11 @@ public class TestPayScaleTable    {
 
     public static void main(String[] args)  {
         
-    double[][] pay = {{0.00, 20.00, 27.50, 35.00},
+    double[][] pay = {{0.00, 20.00, 0.00, 35.00},  //[rows][columns] 
                      {0.00, 21.50, 29.00, 36.50},
-                     {0.00, 23.00, 30.50, 38.00},
-                     {0.00, 24.50, 32.00, 39.50}};
+                     {27.50, 29.00, 30.50, 38.00},
+                     {0.00, 24.50, 38.00, 39.50},
+                     {0.00, 0.00, 0.00, 0.00}};
 
     PayScaleTable table = new PayScaleTable(pay);
         
@@ -16,7 +17,8 @@ public class TestPayScaleTable    {
     table.print2DArray(table.payScaleTable);
     System.out.println();
     
-    System.out.println(table.rate(1,3));
+    System.out.println("An employee with grade 1 and 4 years experience makes $"
+                      + table.rate(1,3) + " per hour.");
 //  An employee with pay grade 1 and 4 years experience
 //  earns $26 per hour, so the output is: 26.00
     

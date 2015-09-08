@@ -17,7 +17,7 @@ public class TestPayScaleTable    {
     table.print2DArray(table.payScaleTable);
     System.out.println();
     
-//NOTE THESE ARE USING printf() INSTEAD OF println()
+//NOTE THESE ARE USING printf() INSTEAD OF println() very coool!!!
 //  An employee with pay grade 1 and 4 years experience
 //  earns $26 per hour, so the output is: 26.00
     System.out.printf("An employee with grade 1 and 4 years experience "
@@ -36,7 +36,7 @@ public class TestPayScaleTable    {
 
 //  An employee with pay grade 3 and 2 years experience
 //  earns $38 per hour, so the output is: 38.00
-    System.out.printf("An employee with grade 2 and 1 years experience "
+    System.out.printf("An employee with grade 3 and 2 years experience "
                      + "makes $ %.2f  per hour.\n", table.rate(3,2));
     }
 }

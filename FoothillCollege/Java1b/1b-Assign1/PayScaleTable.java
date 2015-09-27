@@ -9,7 +9,7 @@ public class PayScaleTable  {
                                 {g, h, i}}
                                 ;
 
-    PayScaleTable() {
+    PayScaleTable() {    //this is a constructor 
     }
     
     PayScaleTable(double[][] a)   {

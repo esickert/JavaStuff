@@ -2,7 +2,7 @@ public class Test3 {
     public static void main(String[] args) {
         
         int N = 3;
-        String str = "Miracle";
+        String str = "Mississippi";
         String newStr = "";
         
         TestMe a = new TestMe(str);

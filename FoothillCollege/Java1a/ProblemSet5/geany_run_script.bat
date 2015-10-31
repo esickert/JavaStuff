@@ -1,4 +1,4 @@
-java "TestPayScaleTable"
+java "Scrabble"
 
 pause
 del "%0"

@@ -7,13 +7,13 @@ public class Employee {
 	/**
 	 * sets the value of name to "newName"
 	 */
-	public void setName(String newName) {
+	public void setName(String newName) {        //DONE
 		name = newName;
 	}
 	/**
 	 * returns the current value of name
 	 */
-	public String getName() {
+	public String getName() {                   //DONE
 		return name;
 	}
 	
@@ -21,7 +21,7 @@ public class Employee {
 	/**
 	 * sets the value of ssn to "newSsn"
 	 */
-	public void setSsn (String newSsn) {
+	public void setSsn (String newSsn) {        //DONE
 		ssn = newSsn;
 	}
 	/**
@@ -35,7 +35,7 @@ public class Employee {
 	/**
 	 * sets the value of salary to "newSalary"
 	 */
-	public void setSalary(double newSalary) {
+	public void setSalary(double newSalary) {     //DONE
 		salary = newSalary;
 	}
 	/**

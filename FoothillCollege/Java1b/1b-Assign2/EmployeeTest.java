@@ -20,7 +20,11 @@ public class EmployeeTest {
         System.out.println(c);
 
         EmployeeConsoleView d = new EmployeeConsoleView();
+        d.putConsoleInput(a);
         d.getConsoleInput(a);
+        
+        System.out.println();
+        System.out.println(a);
 
     }
 }

@@ -38,3 +38,8 @@ public class PayScaleTable  {
 
 }
     
+/**public String toString() {
+		String result = "Name: " + this.getName() 
+				+ "\nSSN#: " + this.getSsn()
+				+ "\nSalary: $" + this.getSalary() + "\n";
+		return result;  */

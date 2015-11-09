@@ -1,11 +1,4 @@
-/*******************************************************************************/
-/* Assignment 1, Java CS 1B                                     Erich Sickert  */
-/* This is the main class for <something>. It takes as input a 2 demensional   */
-/* array of employee's payrate and years of experience (rows vs columns) and   */
-/* prints out the payscale for a random sample of employees                    */
-/*******************************************************************************/
-
-//import java.util.*;   This is never used. Why did I include it????
+import java.util.*;
 
 public class TestPayScaleTable    {
 
@@ -25,8 +18,7 @@ public class TestPayScaleTable    {
     table.print2DArray(table.payScaleTable);
     System.out.println();
     
-//NOTE THESE ARE USING printf() INSTEAD OF println() very coool!!! This allows
-// setting the dollar varibles to 2 places to the right.
+//NOTE THESE ARE USING printf() INSTEAD OF println() very coool!!!
 //  An employee with pay grade 1 and 4 years experience
 //  earns $26 per hour, so the output is: 26.00
     System.out.printf("An employee with grade 1 and 4 years experience "

@@ -1,2 +1,7 @@
+<<<<<<< HEAD
 GitRepositoriesView.GitDirectories=C\:\\JavaStuff\\.git;
 eclipse.preferences.version=1
+=======
+GitRepositoriesView.GitDirectories=/home/esickert/JavaStuff/.git\:
+eclipse.preferences.version=1
+>>>>>>> 0a4f218e7130164e35eb8c91b515f0d1bd049a8a

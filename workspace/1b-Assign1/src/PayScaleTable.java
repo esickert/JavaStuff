@@ -20,9 +20,9 @@ public class PayScaleTable  {
         return payScaleTable[a][b];
     }
 
-    public String convertArrayToString(double[][] a)  {
-        String stuff1 = Arrays.deepToString(a);
-        return stuff1;
+    public String ToString(double[][] a)  {
+        String payTable1 = Arrays.deepToString(a);
+        return payTable1;
     }
     
 //    String stuff1 = Arrays.toString(payScaleTable);

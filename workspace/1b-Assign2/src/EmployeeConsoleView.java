@@ -20,7 +20,7 @@ public class EmployeeConsoleView extends Employee{ //NO PARENTHSES!!!
         System.out.print("Please enter your name: ");
         String b = userInput.nextLine();
         a.setName(b);   
-        System.out.println(a.getName() + " Inside PUTConsoleInput for Name");
+//        System.out.println(a.getName() + " Inside PUTConsoleInput for Name");
         System.out.print("Please enter your SSN: ");
         String c = userInput.nextLine();
         a.setSsn(c);

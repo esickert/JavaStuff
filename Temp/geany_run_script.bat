@@ -1,4 +1,4 @@
-java "TestCollections"
+java "test"
 
 pause
 del "%0"

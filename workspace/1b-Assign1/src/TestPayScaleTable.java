@@ -12,9 +12,9 @@ public class TestPayScaleTable    {
 
     PayScaleTable table = new PayScaleTable(pay);
     
-    String payTable = table.convertArrayToString(table.payScaleTable);
-    System.out.print(table.convertArrayToString(table.payScaleTable));
-    System.out.println(payTable);  //this is correct!!!
+ //   String payTable = table.convertArrayToString(table.payScaleTable);
+ //   System.out.print(table.convertArrayToString(table.payScaleTable));
+ //   System.out.printf(payTable);  //this is correct!!!
     table.print2DArray(table.payScaleTable);
     System.out.println();
     

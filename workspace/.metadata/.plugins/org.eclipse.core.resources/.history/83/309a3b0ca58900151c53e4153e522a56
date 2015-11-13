@@ -4,7 +4,7 @@ public class EmployeeTest {
     public static void main(String[] args)  {
 
 /******************************************************************************/
-//THIS WORKS SORT OF!!!!!!!!!! The idea works!!!
+//THIS WORKS SORT OF!!!!!!!!!!
 
         Employee a = new Employee();
         Employee b = new Employee();

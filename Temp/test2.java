@@ -24,9 +24,9 @@ public class test2  {
 //        return payScaleTable[a][b];
 //    }
 
-    public String ToString(double[][] a)  {
-        String stuff1 = Arrays.deepToString(a);
-        return stuff1;
+    public String printArray(String[][] a)  {
+        String result = Arrays.deepToString(a);
+        return result;
     }
 
 

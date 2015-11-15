@@ -15,7 +15,7 @@ public class test   {
 
         test2 me = new test2(pay);
         
-        System.out.println(me.toString());
+        System.out.println(me.printArray(pay));
     }
         
     

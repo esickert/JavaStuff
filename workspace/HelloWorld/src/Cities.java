@@ -1,5 +1,5 @@
 
-public class Cities extends Countries	{
+public class Cities extends Countries   {
 
 	Cities()	{
 	}
@@ -7,7 +7,7 @@ public class Cities extends Countries	{
 	public  void forLoop()	{
 		for(int i = 0; i <= stuff.length - 1; ++i)	{
 			stuff[i] = i;
-			System.out.print(stuff[i] + "  I'm in a loop");
+			System.out.print(stuff[i] + "  I'm in loop ");
 		}//end of for loop
 	}
 	

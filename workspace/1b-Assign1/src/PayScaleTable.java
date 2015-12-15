@@ -12,7 +12,7 @@ public class PayScaleTable  {
     PayScaleTable() {    //this is a constructor 
     }
     
-    PayScaleTable(double[][] a)   {
+    PayScaleTable(double[][] a)   {    //this is a constructor
         payScaleTable = a;
     }
     
@@ -26,6 +26,11 @@ public class PayScaleTable  {
     }
     
 //    String stuff1 = Arrays.toString(payScaleTable);
+
+	public String convertArrayToString(double[][] a)  {
+        String stuff1 = Arrays.deepToString(a);
+        return stuff1;
+	}
     
     public void print2DArray(double[][] a)    {
         for(int i = 0; i < a.length; i++)   {

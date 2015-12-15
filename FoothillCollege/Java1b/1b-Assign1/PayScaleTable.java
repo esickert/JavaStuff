@@ -20,7 +20,7 @@ public class PayScaleTable  {
         return payScaleTable[a][b];
     }
 
-    public String ToString(double[][] a)  {
+    public String convertArrayToString(double[][] a)  {
         String stuff1 = Arrays.deepToString(a);
         return stuff1;
     }

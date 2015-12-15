@@ -4,14 +4,12 @@ public class HelloWorld {
 	public static void main(String[] args) {
 		
 		int[] stuff = new int[10];
-		
-				
-		// TODO Auto-generated method stub
+
 		System.out.println("Hello World");
 		for( int i: stuff)	{
 			i++;
 			System.out.print(i);
-			System.out.println("line 14");
+			System.out.println(" line 14");
 		}
 		System.out.println();
 			
@@ -31,7 +29,7 @@ public class HelloWorld {
 		System.out.println(poland.getString());
 		paris.forLoop();
 		paris.printMsg();
-		paris.conditonalStatement("youthere");
+		paris.conditonalStatement("you there");
 		System.out.println(paris.recExp(5));
 	}
 

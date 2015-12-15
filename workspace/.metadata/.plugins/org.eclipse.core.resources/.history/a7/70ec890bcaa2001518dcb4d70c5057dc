@@ -1,0 +1,93 @@
+import java.text.DecimalFormat;
+
+/**
+ *  One object of class Employee stores the personal information for one Employee.
+ */
+
+public class Employee {
+	private static int count = 0;
+	
+	private String name;
+	/**
+	 * sets the value of name to "newName"
+	 */
+	public void setName(String newName) {        //DONE
+		name = newName;
+	}
+	/**
+	 * returns the current value of name
+	 */
+	public String getName() {                   //DONE
+		return name;
+	}
+	
+	private String ssn;
+	/**
+	 * sets the value of ssn to "newSsn"
+	 */
+	public void setSsn (String newSsn) {        //DONE
+		ssn = newSsn;
+	}
+	/**
+	 * returns the current value of ssn
+	 */
+	public String getSsn() {
+		return ssn;
+	}
+	
+	
+	private double salary;
+	/**
+	 * sets the value of salary to "newSalary"
+	 */
+	public void setSalary(double newSalary) {     //DONE
+        DecimalFormat df = new DecimalFormat("$0.00");  //*****************************************
+        salary = df.format(newSalary);                //*****************************************
+	}                                                 //this is wrong!!!!!!!!!!!!!!!!!
+	/**
+	 * returns the current value of salary
+	 */
+	public double getSalary() {
+		return salary;
+	}
+	
+	/**
+	 * default constructor for Employee class object which assigns default values for all class properties
+	 */
+	public Employee() {
+		this.setName("null");
+		this.setSsn("000-00-0000");
+		this.setSalary(0.00);
+		count = count + 1;
+	}
+	
+	/**
+	 * parameterized constructor for Employee class object which assigns values for all class properties
+	 * based on the values sent into the parameters.
+	 */
+	public Employee(String name, String ssn, double salary) {
+		this.setName(name);
+		this.setSsn(ssn);
+		this.setSalary(salary);
+		count = count + 1;
+	}
+		
+	/**
+	 * Returns a String containing all the data stored in this object.
+	 */
+	public String toString() {
+		String result = "Name: " + this.getName() 
+				+ "\nSSN#: " + this.getSsn()
+				+ "\nSalary: $" + this.getSalary() + "\n";
+		return result;
+	}
+	
+	/**
+	 * Returns the number of Emploee objects created
+	 */
+	
+	public int getCounter()	{
+		return count;
+	}
+	
+}

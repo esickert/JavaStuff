@@ -12,11 +12,11 @@ public class TestPayScaleTable    {
 
     PayScaleTable table = new PayScaleTable(pay);
     
- //   String payTable = table.convertArrayToString(table.payScaleTable);
- //   System.out.print(table.convertArrayToString(table.payScaleTable));
- //   System.out.println(payTable);  //this is correct!!!
+    String payTable = table.convertArrayToString(table.payScaleTable);
+    System.out.print(table.convertArrayToString(table.payScaleTable));
+    System.out.println(payTable);  //this is correct!!!
     table.print2DArray(table.payScaleTable);
-    System.out.println(pay + "println-pay");
+    System.out.println();
     
 //NOTE THESE ARE USING printf() INSTEAD OF println() very coool!!!
 //  An employee with pay grade 1 and 4 years experience

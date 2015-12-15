@@ -10,16 +10,17 @@ public class EmployeeTest {
 
 //tests the counter is correctly displaying object count
         ArrayList<Employee> myList = new ArrayList<Employee>();
-        for(int i = 1; i <= 3; i++)	
+        for(int i = 1; i <= 7; i++)	
         	myList.add(new Employee("Samatha", "1234567", i)); //on the fly!!!!
 //uses the new for loop to check object creation. Prints out the number of 
 // objects created in the old for loop.       	
         for(Employee i:myList)  // this is the new for loop for (arrays?????)
 			System.out.println(i);               
-        System.out.println("Number of objects created: " + a.getCounter());
+        
  
-/****************************************************************************/       
+ /****************************************************************************/       
 		System.out.println(a);
+		System.out.println("Number of objects created: " + a.getCounter());
 		
   		EmployeeConsoleView d = new EmployeeConsoleView();
     	d.setConsoleInput(a);

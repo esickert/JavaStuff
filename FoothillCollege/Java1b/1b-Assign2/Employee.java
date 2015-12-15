@@ -41,15 +41,17 @@ public class Employee {
 	 */
 	public void setSalary(double newSalary) {     //DONE
         salary =  newSalary;
-	}                                                
+	}
+	/***************************************************************************                                                
 	/**
-	 * returns the current value of salary. I'M DOING A CONVERSION HERE TO PRINT OUT 2 DIGITS RIGHT OF THE DECIMAL 
+	 * returns the current value of salary. I'M DOING A CONVERSION HERE TO PRINT OUT 2 DIGITS TO RIGHT OF THE DECIMAL
+	 * DOUBLE TO STRING 
 	 */
 	public String getSalary() {
 		DecimalFormat df = new DecimalFormat("0.00");
 		return df.format(salary);  
 	}
-	
+	/***************************************************************************
 	/**
 	 * default constructor for Employee class object which assigns default values for all class properties
 	 */

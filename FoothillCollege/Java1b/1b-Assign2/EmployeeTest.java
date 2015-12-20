@@ -41,7 +41,7 @@ public class EmployeeTest {
 		// of objects created in the old for loop.       	
         for(Employee i:myList)   // this is the new for loop for (arrays?????)
 			System.out.println(i);
-        System.out.println("The number of elements in the ArrayList: "
+        System.out.println("The number of objects in the ArrayList: "
                            + b.getCounter());
     }	
 }

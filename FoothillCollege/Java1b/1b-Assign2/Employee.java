@@ -1,12 +1,8 @@
-import java.text.DecimalFormat;
-
 /**
  *  One object of class Employee stores the personal information for one Employee.
  */
 
 public class Employee {
-	private static int count = 0;
-	
 	private String name;
 	/**
 	 * sets the value of name to "newName"
@@ -40,24 +36,22 @@ public class Employee {
 	 * sets the value of salary to "newSalary"
 	 */
 	public void setSalary(double newSalary) {     //DONE
-        salary =  newSalary;
+		salary = newSalary;
 	}
-	/***************************************************************************                                                
-	/* returns the current value of salary. I'M DOING A CONVERSION HERE TO    */
-	/* PRINT OUT 2 DIGITS TO RIGHT OF THE DECIMAL                             */
-	/**************************************************************************/
-	public String getSalary() {
-		DecimalFormat df = new DecimalFormat("0.00");
-		return df.format(salary);  
+	/**
+	 * returns the current value of salary
+	 */
+	public double getSalary() {
+		return salary;
 	}
-	/*
+	
+	/**
 	 * default constructor for Employee class object which assigns default values for all class properties
 	 */
 	public Employee() {
 		this.setName("null");
 		this.setSsn("000-00-0000");
-		this.setSalary(0.00);
-		//count = count + 1;
+		this.setSalary(0);
 	}
 	
 	/**
@@ -68,7 +62,6 @@ public class Employee {
 		this.setName(name);
 		this.setSsn(ssn);
 		this.setSalary(salary);
-		count = count + 1;
 	}
 		
 	/**
@@ -80,13 +73,4 @@ public class Employee {
 				+ "\nSalary: $" + this.getSalary() + "\n";
 		return result;
 	}
-	
-	/**
-	 * Returns the number of Emploee objects created
-	 */
-	
-	public int getCounter()	{
-		return count;
-	}
-	
 }

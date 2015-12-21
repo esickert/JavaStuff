@@ -8,9 +8,11 @@
 import java.util.*;
 
 public class EmployeeConsoleView extends Employee	{ //NO PARENTHSES!!!
+/******************************************************************************/
 /* extends produces a subclass EmployeeConsoleView of class Employee          */
 /* EmployeeConsoleView inherits all methods and variables of class Employee   */
-/* I think!!!!!!                                                              */    
+/* I think!!!!!!                                                              */
+/******************************************************************************/    
 
     public Employee getConsoleInput(Employee a) {
          return a;

@@ -1,3 +1,9 @@
+/******************************************************************************/
+/* Java 1b Assignment 2                                Erich Sickert          */
+/* This is the test class for the Employee and EmployeeConsoleView classes.   */
+/*                                                                            */
+/******************************************************************************/
+
 import java.util.*;
 
 public class EmployeeTest {

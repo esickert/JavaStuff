@@ -5,8 +5,8 @@
 		<item value="25" key="DIALOG_Y_ORIGIN"/>
 	</section>
 	<section name="org.eclipse.ui.internal.QuickAccess">
-		<item value="675" key="dialogHeight"/>
-		<item value="1200" key="dialogWidth"/>
+		<item value="537" key="dialogHeight"/>
+		<item value="1025" key="dialogWidth"/>
 		<list key="textEntries">
 		</list>
 		<list key="orderedElements">
@@ -34,6 +34,7 @@
 		<item value="false" key="WizardFileSystemResourceImportPage1.STORE_OVERWRITE_EXISTING_RESOURCES_ID"/>
 		<list key="WizardFileSystemResourceImportPage1.STORE_SOURCE_NAMES_ID">
 			<item value="C:\JavaStuff\FoothillCollege\Java1b\1b-Assign1"/>
+			<item value="C:\Users\esickert\workspace\Assign1\src"/>
 			<item value="C:\JavaStuff\FoothillCollege\Java1b\1b-Assign2"/>
 		</list>
 	</section>

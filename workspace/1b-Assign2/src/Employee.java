@@ -82,7 +82,7 @@ public class Employee {
 	}
 	
 	/**
-	 * Returns the number of Emploee objects created
+	 * Returns the number of Employee objects created
 	 */
 	
 	public int getCounter()	{

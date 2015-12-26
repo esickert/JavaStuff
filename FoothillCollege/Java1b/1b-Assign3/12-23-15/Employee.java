@@ -56,7 +56,7 @@ public class Employee {
 	public Employee() {
 		this.setName("null");
 		this.setSsn("000-00-0000");
-        this.setSalary(0.00);
+		this.setSalary(0.00);
 		//count = count + 1;
 	}
 	
@@ -82,7 +82,7 @@ public class Employee {
 	}
 	
 	/**
-	 * Returns the number of Employee objects created
+	 * Returns the number of Emploee objects created
 	 */
 	
 	public int getCounter()	{

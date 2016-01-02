@@ -27,8 +27,7 @@ public class EmployeeTest {
 	public static void testCreatingArrayListElements()	{
 		ArrayList<Employee> myListToo = new ArrayList<Employee>();   
 		myListToo.add(new Employee("Erich","1234",300));
-		myListToo.add(new Employee("tom","456",436));
-//		myListToo.add(d.getConsoleInput(a)); 
+		myListToo.add(new Employee("tom","456",436)); 
     	for(int i = 0; i < myListToo.size(); i++)
 		    System.out.println(myListToo.get(i));                
     }

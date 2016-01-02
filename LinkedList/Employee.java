@@ -5,7 +5,7 @@ import java.text.DecimalFormat;
  */
 
 public class Employee {
-	private static int count = 0;
+	private static int count = 0; //want it "static" as I'll be calling it from other objects!!
 	
 	private String name;
 	/**
@@ -42,10 +42,10 @@ public class Employee {
 	public void setSalary(double newSalary) {     //DONE
         salary =  newSalary;
 	}
-	/***************************************************************************                                                
-	/* returns the current value of salary. I'M DOING A CONVERSION HERE TO    */
-	/* PRINT OUT 2 DIGITS TO RIGHT OF THE DECIMAL                             */
-	/**************************************************************************/
+	/***************************************************************************/                                                
+	/** returns the current value of salary. I'M DOING A CONVERSION HERE TO   **/
+	/** PRINT OUT 2 DIGITS TO RIGHT OF THE DECIMAL                            **/
+	/***************************************************************************/
 	public String getSalary() {
 		DecimalFormat df = new DecimalFormat("0.00");
 		return df.format(salary);  
@@ -57,7 +57,7 @@ public class Employee {
 		this.setName("null");
 		this.setSsn("000-00-0000");
         this.setSalary(0.00);
-		//count = count + 1;
+		count++;
 	}
 	
 	/**
@@ -68,7 +68,7 @@ public class Employee {
 		this.setName(name);
 		this.setSsn(ssn);
 		this.setSalary(salary);
-		count = count + 1;
+		count++;
 	}
 		
 	/**

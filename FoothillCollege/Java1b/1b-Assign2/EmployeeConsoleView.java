@@ -19,6 +19,7 @@ public class EmployeeConsoleView extends Employee	{ //NO PARENTHSES!!!
        	System.out.print("Please enter your salary: ");
        	double d = userInput.nextDouble();
        	worker.setSalary(d);
+        System.out.println();
         return worker;  
     }
 }      

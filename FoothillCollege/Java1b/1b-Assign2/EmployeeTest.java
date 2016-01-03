@@ -45,7 +45,7 @@ public class EmployeeTest {
             for(int i = 0; i <= num;i++)  {
                 EmployeeConsoleView d = new EmployeeConsoleView();
                 myList.add(d.setConsoleInput());
-                System.out.println(myList.get(i));
+//                System.out.println(myList.get(i));
             }
             for(int i = 0; i <= num; i++)    {
                 System.out.println(myList.get(i)); 

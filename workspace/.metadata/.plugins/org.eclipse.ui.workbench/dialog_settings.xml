@@ -34,7 +34,10 @@
 		<item value="false" key="WizardFileSystemResourceImportPage1.STORE_OVERWRITE_EXISTING_RESOURCES_ID"/>
 		<list key="WizardFileSystemResourceImportPage1.STORE_SOURCE_NAMES_ID">
 			<item value="C:\JavaStuff\FoothillCollege\Java1b\1b-Assign1"/>
+<<<<<<< HEAD
 			<item value="C:\Users\esickert\workspace\Assign1\src"/>
+=======
+>>>>>>> master
 			<item value="C:\JavaStuff\FoothillCollege\Java1b\1b-Assign2"/>
 		</list>
 	</section>

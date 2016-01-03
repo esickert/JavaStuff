@@ -1,4 +1,8 @@
+<<<<<<< HEAD
 # List of external plug-in models previously loaded. Timestamp: 1450656564549
+=======
+# List of external plug-in models previously loaded. Timestamp: 1451847342751
+>>>>>>> master
 file:/C:/Users/esickert/eclipse/plugins/com.ibm.icu_52.1.1.v201501240615.jar
 file:/C:/Users/esickert/eclipse/plugins/com.jcraft.jsch_0.1.51.v201410302000.jar
 file:/C:/Users/esickert/eclipse/plugins/com.jcraft.jsch_0.1.50.v201403120620.jar

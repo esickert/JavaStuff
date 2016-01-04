@@ -1,9 +1,0 @@
-<<<<<<< HEAD
-<?xml version="1.0" encoding="UTF-8"?>
-<session version="1.0">&#x0A;<refactoring comment="Delete resource &apos;1b-Assign1&apos;" deleteContents="false" description="Delete resource &apos;1b-Assign1&apos;" element1="/1b-Assign1" flags="7" id="org.eclipse.ltk.core.refactoring.delete.resources" resources="1" stamp="1447095342892"/>&#x0A;<refactoring comment="Delete resource &apos;Assign1&apos;" deleteContents="false" description="Delete resource &apos;Assign1&apos;" element1="/Assign1" flags="7" id="org.eclipse.ltk.core.refactoring.delete.resources" resources="1" stamp="1447095665137"/>
-=======
-<?xml version="1.0" encoding="UTF-8"?>
-<session version="1.0">
-<refactoring comment="Rename Java project &apos;2b-Assig2&apos; to &apos;2b-Assign2&apos;&#x0A;- Original element: &apos;2b-Assig2&apos;&#x0A;- Renamed element: &apos;2b-Assig2&apos;&#x0A;- Update references to refactored element" description="Rename Java project &apos;2b-Assig2&apos;" flags="7" id="org.eclipse.jdt.ui.rename.java.project" input="=2b-Assig2" name="2b-Assign2" references="true" stamp="1447044613063" version="1.0"/>
->>>>>>> 0a4f218e7130164e35eb8c91b515f0d1bd049a8a
-</session>

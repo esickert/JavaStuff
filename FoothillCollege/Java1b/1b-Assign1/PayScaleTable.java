@@ -51,7 +51,7 @@ public class PayScaleTable  {
    	  		for(int j = 0; j < payScaleTable[i].length; j++) {
 				anArray += (payScaleTable[i][j] + "\t");
         	}
-			anArray += "\n";     //"\r" is a carriage return. This is added at the end of each above for loop.
+			anArray += "\n";     
         }
         return anArray;    
     } 

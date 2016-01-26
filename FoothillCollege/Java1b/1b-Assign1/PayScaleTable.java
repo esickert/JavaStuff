@@ -1,5 +1,9 @@
 import java.util.*;
-
+/** class PayScaleTable
+ * 
+ * @author esickert
+ *
+ */
 public class PayScaleTable  {
     
     double a,b,c,d,e,f,g,h,i;
@@ -25,21 +29,32 @@ public class PayScaleTable  {
         return stuff1;
     }
     
-//    String stuff1 = Arrays.toString(payScaleTable);
-    
+/** 
+ * print2DArray was my first attempt to printout the 2D array   
+ * @param a
+ */
     public void print2DArray(double[][] a)    {
         for(int i = 0; i < a.length; i++)   {
-            System.out.println();
+//            System.out.println();
             for(int j = 0; j < a[i].length; j++) {
-                System.out.print(a[i][j] + "    ");
+                System.out.print(a[i][j] + "\t");
             }
+            System.out.println();
         }
     }
-
+    /**
+     *  toString method to print out the 2-D array using just System.out.println()
+    */
+    public String toString()	{ //a toString method 
+    	String anArray = "";
+    	for(int i = 0; i < payScaleTable.length; i++)   {
+   	  		for(int j = 0; j < payScaleTable[i].length; j++) {
+				anArray += (payScaleTable[i][j] + "\t");
+        	}
+			anArray += "\n";     
+        }
+        return anArray;    
+    } 
 }
     
-/**public String toString() {
-		String result = "Name: " + this.getName() 
-				+ "\nSSN#: " + this.getSsn()
-				+ "\nSalary: $" + this.getSalary() + "\n";
-		return result;  */
+

@@ -51,7 +51,7 @@ public class PayScaleTable  {
    	  		for(int j = 0; j < payScaleTable[i].length; j++) {
 				anArray += (payScaleTable[i][j] + "\t");
         	}
-			anArray += "\n";     
+			anArray += "\n";   //this drops to new line after each line    
         }
         return anArray;    
     } 

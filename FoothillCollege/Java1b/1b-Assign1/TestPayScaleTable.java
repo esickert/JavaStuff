@@ -3,7 +3,7 @@ import java.util.*;
 public class TestPayScaleTable    {
 
     public static void main(String[] args)  {
-        
+
     double[][] pay = {{0.00, 20.00, 0.00, 35.00},  //[rows][columns] 
                      {0.00, 21.50, 29.00, 36.50},
                      {27.50, 29.00, 30.50, 38.00},

@@ -6,12 +6,9 @@ import java.util.*;
  */
 public class PayScaleTable  {
     
-    double a,b,c,d,e,f,g,h,i;
     
-    double[][] payScaleTable = {{a, b, c},
-                                {d, e, f},
-                                {g, h, i}}
-                                ;
+    
+    double[][] payScaleTable; 
 
     PayScaleTable() {    //this is a constructor 
     }

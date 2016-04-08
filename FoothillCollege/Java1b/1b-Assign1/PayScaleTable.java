@@ -5,9 +5,7 @@ import java.util.*;
  *
  */
 public class PayScaleTable  {
-    
-    
-    
+   
     double[][] payScaleTable; 
 
     PayScaleTable() {    //this is a constructor 

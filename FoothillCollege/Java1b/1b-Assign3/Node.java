@@ -10,11 +10,11 @@ public class Node  {  //page 892 in Wu's book .pdf
     public int count = 0;
 
     public Node()   {  
-<<<<<<< HEAD
+
 //        this setEmployee(worker);
-=======
+
 //        this (setEmployee(worker));
->>>>>>> linux
+
         next = null;
     }
 
